@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" type="text/css" href="assets/stylesheet/common.css">
+        <?php include "mods/assets.common.php"; ?>
         <link rel="stylesheet" type="text/css" href="assets/stylesheet/index.css">
-        <script type="text/javascript" src="assets/javascript/lib/require.js" data-main="index.js"></script>
+
     </head>
     <body id="index">
         <?php include "mods/header.php"; ?>
