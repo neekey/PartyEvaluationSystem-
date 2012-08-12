@@ -1,10 +1,18 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf8">
+        <meta charset="utf-8">
         <?php include "mods/assets.common.php"; ?>
-        <link rel="stylesheet" type="text/css" href="assets/stylesheet/index.css">
+        <link rel="stylesheet" type="text/css" href="assets/lib/css/formalize.css">
 
+        <style>
+            #common-mods {
+                margin-left: 50px;
+            }
+            .mod-block {
+                margin-bottom: 20px;
+            }
+        </style>
     </head>
     <body id="common-mods">
         <div class="mod-block">
@@ -43,6 +51,25 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="mod-block">
+            <h3 class="title">Table</h3>
+            <div class="mod-wrap">
+                <form>
+                    <div class="control-group">
+                        <label class="control-label" for="ipt">姓名<span class="tip">请输入你的姓名</span></label>
+                        <div class="controls">
+                            <input id="ipt" type="text" placeholder="请输入文字" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="ipt">姓名<span class="tip">请输入你的姓名</span></label>
+                        <div class="controls">
+                            <input id="ipt" type="text" placeholder="请输入文字" />
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

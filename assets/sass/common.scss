@@ -1,0 +1,239 @@
+/**
+ * 全局样式
+ */
+
+/* 引入 normalize, 用于reset样式 */
+@import "normalize.scss";
+@import "compass";
+//@import "compass/utilities";
+
+body {
+  background-image: url(../image/main_bg.jpg);
+}
+
+/* header */
+#header {
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+
+  .banner {
+    height: 274px;
+    width: 960px;
+    margin: auto;
+    background: url(../image/header.png) -360px 0 no-repeat;
+    position: relative;
+    top: -202px;
+  }
+
+  .decorate {
+    width: 100%;
+    height: 201px;
+    background: #e53c21;
+  }
+
+  .banner-left {
+
+    height: 274px;
+    width: 369px;
+    top: 0;
+    left: -369px;
+    /*margin: auto;*/
+    background: url(../image/header_left.png) right 0 no-repeat;
+    position: absolute;
+  }
+
+  .banner-right {
+
+    height: 274px;
+    width: 546px;
+    top: 0;
+    right: -546px;
+    background: url(../image/header_right.png) left 0 no-repeat;
+    position: absolute;
+  }
+
+}
+
+/* content */
+#index #content {
+
+  height: 400px;
+  margin: auto;
+  width: 960px;
+  background: url(../image/main_building.jpg) top right no-repeat;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  text-align: center;
+  height: 183px;
+  background-color: #791200;
+
+  .bg {
+    height: 183px;
+    width: 960px;
+    margin: auto;
+    background: url(../image/footer_bg.jpg) top left no-repeat;
+  }
+}
+
+/*=== 通用组件 mods ===*/
+
+/* 块级内容的装饰 */
+.block-decoration {
+  background: url(../image/block-decoration-top.png) no-repeat top left;
+  margin: 10px;
+}
+
+.block-decoration-wrap {
+  background: url(../image/block-decoration-bottom.png) no-repeat bottom right;
+  padding: 30px 30px 30px 30px;
+
+}
+
+/* 左侧菜单按钮 */
+.menu-button {
+  width: 128px;
+  height: 28px;
+  background: url(../image/menu-button.png) no-repeat top left;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  color: #991d1d;
+  /*box-shadow: 1px 1px 1px red;*/
+}
+
+.menu-button:hover, .menu-button-hover {
+  background: url(../image/menu-button-hover.png) no-repeat top left;
+}
+
+/* 一般的按钮 */
+.action-button {
+  background: url(../image/action-button-bg.jpg) top left;
+  height: 26px;
+  width: 84px;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+/*display: inline-block;*/
+/*padding: 0 10px 0 10px;*/
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* 页面中的主要内容的容器 */
+.main-block {
+  background: white;
+  padding: 5px;
+  margin: 0 25px 0 25px;
+}
+
+.main-block-wrap {
+  border: 1px solid #eacaca;
+  position: relative;
+  height: 400px;
+}
+
+/* 标题 */
+.main-block .title {
+  width: 162px;
+  height: 35px;
+  background: url(../image/main-block-title-bg.png) no-repeat top left;
+  position: absolute;
+  top: 8px;
+  left: -9px;
+  text-align: center;
+  line-height: 28px;
+  color: white;
+}
+
+/* 右上角的三角装饰 */
+.main-block .decorator-top {
+  width: 45px;
+  height: 45px;
+  background: url(../image/main-block-decorator-top.png) no-repeat top left;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+/* 左下角的三角装饰 */
+.main-block .decorator-bottom {
+  width: 45px;
+  height: 45px;
+  background: url(../image/main-block-decorator-bottom.png) no-repeat top left;
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+}
+
+/* 翻页按钮 */
+.main-block .page-button {
+  height: 33px;
+  position: absolute;
+  width: 162px;
+  bottom: 20px;
+  right: -9px;
+}
+
+.main-block .page-button .prev {
+  background: url(../image/page-prev.png);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 92px;
+  height: 26px;
+  color: white;
+  text-align: center;
+  line-height: 26px;
+}
+
+.main-block .page-button .next {
+  background: url(../image/page-next.png);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 70px;
+  height: 33px;
+  color: white;
+  text-align: center;
+  line-height: 26px;
+}
+
+/* 表单 */
+.control-group {
+
+  // 清楚浮动
+  @include clearfix();
+
+  margin-bottom: 10px;
+
+  .control-label {
+
+    float: left;
+    text-align: right;
+    width: 140px;
+    display: block;
+    margin-right: 20px;
+
+    .tip {
+      display: block;
+      font-size: small;
+      color: #666;
+      margin-top: 5px;
+    }
+  }
+
+  .controls {
+
+    input {
+
+      //vertical-align: middle;
+    }
+  }
+}
+
