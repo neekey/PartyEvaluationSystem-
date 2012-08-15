@@ -58,15 +58,37 @@
             <div class="mod-wrap">
                 <form>
                     <div class="control-group">
-                        <label class="control-label" for="ipt">姓名<span class="tip">请输入你的姓名</span></label>
+                        <label class="control-label" for="ipt">姓名</label>
                         <div class="controls">
-                            <input id="ipt" type="text" placeholder="请输入文字" />
+                            <input type="text" placeholder="请输入文字" />
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="ipt">姓名<span class="tip">请输入你的姓名</span></label>
+                        <label class="control-label" for="ipt">姓名</label>
                         <div class="controls">
-                            <input id="ipt" type="text" placeholder="请输入文字" />
+                            <input type="text" placeholder="请输入文字" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="ipt">姓名</label>
+                        <div class="controls">
+                            <input class="short" type="text" placeholder="请输入文字" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="ipt">姓名</label>
+                        <div class="controls">
+                            <select>
+                                <option>你好</option>
+                                <option>我好</option>
+                                <option>他好</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="ipt">姓名</label>
+                        <div class="controls">
+                            <input class="short" type="text" placeholder="请输入文字" />
                         </div>
                     </div>
                 </form>

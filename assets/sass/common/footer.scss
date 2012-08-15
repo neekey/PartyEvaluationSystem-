@@ -1,0 +1,16 @@
+/* footer */
+#footer {
+  width: 100%;
+  min-width: 960px;
+  text-align: center;
+  height: 183px;
+  background-color: #791200;
+  overflow: hidden;
+
+  .bg {
+    height: 183px;
+    width: 960px;
+    margin: auto;
+    background: url(../image/footer_bg.jpg) top left no-repeat;
+  }
+}

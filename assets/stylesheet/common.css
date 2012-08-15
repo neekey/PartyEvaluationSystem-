@@ -196,83 +196,99 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /* line 497, ../sass/normalize.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 10, ../sass/common.scss */
-body { background-image: url(../image/main_bg.jpg); }
-
 /* header */
-/* line 15, ../sass/common.scss */
+/* line 2, ../sass/common/header.scss */
 #header { width: 100%; height: 280px; text-align: center; margin: auto; overflow: hidden; }
-/* line 22, ../sass/common.scss */
+/* line 10, ../sass/common/header.scss */
 #header .banner { height: 274px; width: 960px; margin: auto; background: url(../image/header.png) -360px 0 no-repeat; position: relative; top: -202px; }
-/* line 31, ../sass/common.scss */
+/* line 19, ../sass/common/header.scss */
 #header .decorate { width: 100%; height: 201px; background: #e53c21; }
-/* line 37, ../sass/common.scss */
+/* line 25, ../sass/common/header.scss */
 #header .banner-left { height: 274px; width: 369px; top: 0; left: -369px; /*margin: auto;*/ background: url(../image/header_left.png) right 0 no-repeat; position: absolute; }
-/* line 48, ../sass/common.scss */
+/* line 36, ../sass/common/header.scss */
 #header .banner-right { height: 274px; width: 546px; top: 0; right: -546px; background: url(../image/header_right.png) left 0 no-repeat; position: absolute; }
 
-/* content */
-/* line 61, ../sass/common.scss */
-#index #content { height: 400px; margin: auto; width: 960px; background: url(../image/main_building.jpg) top right no-repeat; }
-
 /* footer */
-/* line 70, ../sass/common.scss */
-#footer { width: 100%; text-align: center; height: 183px; background-color: #791200; }
-/* line 76, ../sass/common.scss */
+/* line 2, ../sass/common/footer.scss */
+#footer { width: 100%; min-width: 960px; text-align: center; height: 183px; background-color: #791200; overflow: hidden; }
+/* line 10, ../sass/common/footer.scss */
 #footer .bg { height: 183px; width: 960px; margin: auto; background: url(../image/footer_bg.jpg) top left no-repeat; }
+
+/* content */
+/* line 2, ../sass/common/content.scss */
+#index #content { width: 100%; min-width: 960px; overflow: hidden; }
+/* line 8, ../sass/common/content.scss */
+#index #content .content-wrap { height: 400px; margin: auto; width: 960px; background: url(../image/main_building.jpg) top right no-repeat; }
+
+/* line 13, ../sass/common.scss */
+body { background-image: url(../image/main_bg.jpg); }
 
 /*=== 通用组件 mods ===*/
 /* 块级内容的装饰 */
-/* line 87, ../sass/common.scss */
+/* line 26, ../sass/common.scss */
 .block-decoration { background: url(../image/block-decoration-top.png) no-repeat top left; margin: 10px; }
 
-/* line 92, ../sass/common.scss */
+/* line 31, ../sass/common.scss */
 .block-decoration-wrap { background: url(../image/block-decoration-bottom.png) no-repeat bottom right; padding: 30px 30px 30px 30px; }
 
 /* 左侧菜单按钮 */
-/* line 99, ../sass/common.scss */
-.menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; /*box-shadow: 1px 1px 1px red;*/ }
+/* line 42, ../sass/common.scss */
+.menu-button, button.menu-button, input[type="reset"].menu-button, input[type="submit"].menu-button, input[type="button"].menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; /*box-shadow: 1px 1px 1px red;*/ }
 
-/* line 110, ../sass/common.scss */
+/* line 55, ../sass/common.scss */
 .menu-button:hover, .menu-button-hover { background: url(../image/menu-button-hover.png) no-repeat top left; }
 
+/* line 63, ../sass/common.scss */
+.form-button, button.form-button, input[type="reset"].form-button input[type="submit"].form-button, input[type="button"].form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
+
 /* 一般的按钮 */
-/* line 115, ../sass/common.scss */
-.action-button { background: url(../image/action-button-bg.jpg) top left; height: 26px; width: 84px; text-align: center; color: white; line-height: 26px; /*display: inline-block;*/ /*padding: 0 10px 0 10px;*/ border: 2px solid white; cursor: pointer; }
+/* line 76, ../sass/common.scss */
+.action-button, input.action-button, button.action-button { background: url(../image/action-button-bg.jpg) top left; height: 26px; width: 84px; text-align: center; color: white; line-height: 26px; /*display: inline-block;*/ /*padding: 0 10px 0 10px;*/ border: 2px solid white; cursor: pointer; }
 
 /* 页面中的主要内容的容器 */
-/* line 129, ../sass/common.scss */
+/* line 90, ../sass/common.scss */
 .main-block { background: white; padding: 5px; margin: 0 25px 0 25px; }
 
-/* line 135, ../sass/common.scss */
+/* line 96, ../sass/common.scss */
 .main-block-wrap { border: 1px solid #eacaca; position: relative; height: 400px; }
 
 /* 标题 */
-/* line 142, ../sass/common.scss */
+/* line 103, ../sass/common.scss */
 .main-block .title { width: 162px; height: 35px; background: url(../image/main-block-title-bg.png) no-repeat top left; position: absolute; top: 8px; left: -9px; text-align: center; line-height: 28px; color: white; }
 
 /* 右上角的三角装饰 */
-/* line 155, ../sass/common.scss */
+/* line 116, ../sass/common.scss */
 .main-block .decorator-top { width: 45px; height: 45px; background: url(../image/main-block-decorator-top.png) no-repeat top left; position: absolute; top: -3px; right: -3px; }
 
 /* 左下角的三角装饰 */
-/* line 165, ../sass/common.scss */
+/* line 126, ../sass/common.scss */
 .main-block .decorator-bottom { width: 45px; height: 45px; background: url(../image/main-block-decorator-bottom.png) no-repeat top left; position: absolute; bottom: -3px; left: -3px; }
 
 /* 翻页按钮 */
-/* line 175, ../sass/common.scss */
+/* line 136, ../sass/common.scss */
 .main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
 
-/* line 183, ../sass/common.scss */
+/* line 144, ../sass/common.scss */
 .main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; }
 
-/* line 195, ../sass/common.scss */
+/* line 156, ../sass/common.scss */
 .main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
 
 /* 表单 */
-/* line 208, ../sass/common.scss */
-.control-group { overflow: hidden; *zoom: 1; margin-bottom: 10px; }
-/* line 215, ../sass/common.scss */
-.control-group .control-label { float: left; text-align: right; width: 140px; display: block; margin-right: 20px; }
-/* line 223, ../sass/common.scss */
+/* line 169, ../sass/common.scss */
+.control-group { overflow: hidden; *zoom: 1; margin-bottom: 2px; }
+/* line 180, ../sass/common.scss */
+.control-group .control-label { float: left; text-align: right; width: 109px; height: 30px; padding-right: 20px; text-align: right; line-height: 30px; color: #aa002a; display: block; margin-right: 30px; background: url(../image/form_label_bg.png); }
+/* line 194, ../sass/common.scss */
 .control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
+/* line 204, ../sass/common.scss */
+.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img { margin-top: 1px; height: 28px; width: 170px; border: #cf999e 1px solid; color: #aa002a; font-weight: bold; }
+/* line 213, ../sass/common.scss */
+.control-group .controls .verify-code-img { height: 26px; }
+/* line 217, ../sass/common.scss */
+.control-group .controls .short { width: 82px; }
+
+/* line 223, ../sass/common.scss */
+.action-group { margin-top: 20px; }
+/* line 225, ../sass/common.scss */
+.action-group .form-button { margin-right: 20px; }

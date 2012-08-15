@@ -5,81 +5,20 @@
 /* 引入 normalize, 用于reset样式 */
 @import "normalize.scss";
 @import "compass";
-//@import "compass/utilities";
+
+@import "common/header.scss";
+@import "common/footer.scss";
+@import "common/content.scss";
 
 body {
   background-image: url(../image/main_bg.jpg);
 }
 
-/* header */
-#header {
-  width: 100%;
-  height: 280px;
-  text-align: center;
-  margin: auto;
-  overflow: hidden;
 
-  .banner {
-    height: 274px;
-    width: 960px;
-    margin: auto;
-    background: url(../image/header.png) -360px 0 no-repeat;
-    position: relative;
-    top: -202px;
-  }
 
-  .decorate {
-    width: 100%;
-    height: 201px;
-    background: #e53c21;
-  }
 
-  .banner-left {
 
-    height: 274px;
-    width: 369px;
-    top: 0;
-    left: -369px;
-    /*margin: auto;*/
-    background: url(../image/header_left.png) right 0 no-repeat;
-    position: absolute;
-  }
 
-  .banner-right {
-
-    height: 274px;
-    width: 546px;
-    top: 0;
-    right: -546px;
-    background: url(../image/header_right.png) left 0 no-repeat;
-    position: absolute;
-  }
-
-}
-
-/* content */
-#index #content {
-
-  height: 400px;
-  margin: auto;
-  width: 960px;
-  background: url(../image/main_building.jpg) top right no-repeat;
-}
-
-/* footer */
-#footer {
-  width: 100%;
-  text-align: center;
-  height: 183px;
-  background-color: #791200;
-
-  .bg {
-    height: 183px;
-    width: 960px;
-    margin: auto;
-    background: url(../image/footer_bg.jpg) top left no-repeat;
-  }
-}
 
 /*=== 通用组件 mods ===*/
 
@@ -96,7 +35,11 @@ body {
 }
 
 /* 左侧菜单按钮 */
-.menu-button {
+.menu-button,
+button.menu-button,
+input[type="reset"].menu-button,
+input[type="submit"].menu-button,
+input[type="button"].menu-button {
   width: 128px;
   height: 28px;
   background: url(../image/menu-button.png) no-repeat top left;
@@ -104,6 +47,8 @@ body {
   line-height: 28px;
   text-align: center;
   color: #991d1d;
+  border: none;
+  display: inline-block;
   /*box-shadow: 1px 1px 1px red;*/
 }
 
@@ -111,8 +56,24 @@ body {
   background: url(../image/menu-button-hover.png) no-repeat top left;
 }
 
+.form-button,
+button.form-button,
+input[type="reset"].form-button
+input[type="submit"].form-button,
+input[type="button"].form-button{
+  height: 28px;
+  width: 105px;
+  background: url(../image/form_button_bg.png) no-repeat top left;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  color: #991d1d;
+  border: none;
+  display: inline-block;
+}
+
 /* 一般的按钮 */
-.action-button {
+.action-button, input.action-button, button.action-button {
   background: url(../image/action-button-bg.jpg) top left;
   height: 26px;
   width: 84px;
@@ -210,15 +171,25 @@ body {
   // 清楚浮动
   @include clearfix();
 
-  margin-bottom: 10px;
+  $inputNormalWidth: 170px;
+  $inputShortWidth: 82px;
+  $formTextColor: #aa002a;
+
+  margin-bottom: 2px;
 
   .control-label {
 
     float: left;
     text-align: right;
-    width: 140px;
+    width: 109px;
+    height: 30px;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 30px;
+    color: $formTextColor;
     display: block;
-    margin-right: 20px;
+    margin-right: 30px;
+    background: url(../image/form_label_bg.png);
 
     .tip {
       display: block;
@@ -230,10 +201,29 @@ body {
 
   .controls {
 
-    input {
-
-      //vertical-align: middle;
+    input, select, .verify-code-img {
+      margin-top: 1px;
+      height: 28px;
+      width: $inputNormalWidth;
+      border: #cf999e 1px solid;
+      color: $formTextColor;
+      font-weight: bold;
     }
+
+    .verify-code-img {
+      height: 26px;
+    }
+
+    .short {
+      width: $inputShortWidth;
+    }
+  }
+}
+
+.action-group {
+  margin-top: 20px;
+  .form-button {
+    margin-right: 20px;
   }
 }
 

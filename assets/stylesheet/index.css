@@ -1,0 +1,6 @@
+/* line 1, ../sass/index.scss */
+.form-block { width: 400px; }
+/* line 4, ../sass/index.scss */
+.form-block .action-group { margin-top: 15px; }
+/* line 6, ../sass/index.scss */
+.form-block .action-group .form-button { margin-left: 23px; margin-right: 4px; }

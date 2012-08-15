@@ -1,0 +1,15 @@
+/* content */
+#index #content {
+
+  width: 100%;
+  min-width: 960px;
+  overflow: hidden;
+
+  .content-wrap {
+
+    height: 400px;
+    margin: auto;
+    width: 960px;
+    background: url(../image/main_building.jpg) top right no-repeat;
+  }
+}
