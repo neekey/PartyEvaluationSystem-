@@ -4,7 +4,7 @@
  * @author Neekey <ni184775761@gmail.com>
  * @date 2012.08
  */
-define(function() {
+define( [ './lib/slides.min.jquery.js' ], function() {
 
     /**
      * 默认配置

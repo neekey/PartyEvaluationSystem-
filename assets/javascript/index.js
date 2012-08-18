@@ -1,14 +1,31 @@
+/**
+ * 首页
+ *
+ * @author Neekey <ni184775761@gmail.com>
+ * @date 2012.08
+ */
 require.config({
     baseUrl: 'assets/javascript/'
 });
 
-require([ './common/switchable' ], function ( Switchable ) {
+(function () {
 
     'use strict';
 
     $(document).ready(function () {
 
-
-//        new Switchable( $( '.J_Switch'));
+        // 初始化滚动组件
+        $('.affairs').slides({
+            preload: true,
+            preloadImage: 'assets/image/loading.gif',
+            next: 'J_SwitchRight',
+            prev: 'J_SwitchLeft',
+            container: 'J_SwitchList',
+            generateNextPrev: false,
+            pagination: false,
+            generatePagination: false,
+            autoHeight: true,
+            play: 5000
+        });
     });
-});
+})();
