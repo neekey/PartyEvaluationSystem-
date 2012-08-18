@@ -1,0 +1,18 @@
+
+@import "compass";
+
+.site-info {
+  @include clearfix();
+  clear: both;
+  margin-top: 20px;
+  .copyright {
+
+    p {
+      margin: 0;
+      color: #e1e37a;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+

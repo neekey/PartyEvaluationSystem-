@@ -1,0 +1,1 @@
+require.config({baseUrl:"assets/javascript/"});require(["./common/switchable"],function(e){"use strict";$(document).ready(function(){})});

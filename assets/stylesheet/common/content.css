@@ -2,4 +2,4 @@
 /* line 2, ../../sass/common/content.scss */
 #index #content { width: 100%; min-width: 960px; overflow: hidden; }
 /* line 8, ../../sass/common/content.scss */
-#index #content .content-wrap { height: 400px; margin: auto; width: 960px; background: url(../image/main_building.jpg) top right no-repeat; }
+#index #content .content-wrap { margin: auto; padding-bottom: 61px; width: 960px; background: url(../image/main_building.jpg) top right no-repeat; }
