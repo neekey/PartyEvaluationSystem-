@@ -1,2 +1,4 @@
-/* line 2, ../../sass/common/copyright.scss */
-.copyright p { margin: 0; color: #e1e37a; }
+/* line 4, ../../sass/common/copyright.scss */
+.site-info { overflow: hidden; *zoom: 1; clear: both; margin-top: 20px; }
+/* line 10, ../../sass/common/copyright.scss */
+.site-info .copyright p { margin: 0; color: #e1e37a; font-size: 12px; line-height: 16px; }

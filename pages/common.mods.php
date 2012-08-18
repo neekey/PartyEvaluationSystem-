@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <?php include "mods/assets.common.php"; ?>
-        <link rel="stylesheet" type="text/css" href="assets/lib/css/formalize.css">
+        <?php include "../mods/assets.common.php"; ?>
+        <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
 
         <style>
             #common-mods {
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="mod-block">
-            <h3 class="title">Table</h3>
+            <h3 class="title">Form</h3>
             <div class="mod-wrap">
                 <form>
                     <div class="control-group">
@@ -92,6 +92,41 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="mod-block">
+            <h3 class="title">Form</h3>
+            <div class="mod-wrap">
+                <table class="info-table">
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>分值</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>愿景体系</td>
+                            <td>25分</td>
+                            <td class="colord">已评</td>
+                        </tr>
+                        <tr>
+                            <td>愿景体系</td>
+                            <td>25分</td>
+                            <td>已评</td>
+                        </tr>
+                        <tr>
+                            <td>愿景体系</td>
+                            <td>25分</td>
+                            <td>已评</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </body>

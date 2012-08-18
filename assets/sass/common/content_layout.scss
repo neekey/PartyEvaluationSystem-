@@ -1,0 +1,19 @@
+#content {
+
+  $fontColor: #b21f2a;
+  .side {
+    float: left;
+    width: 158px;
+    .menu {
+      .item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .main {
+    width: 720px;
+    margin-left: 158px;
+    padding-left: 47px;
+  }
+}

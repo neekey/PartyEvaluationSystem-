@@ -1,5 +1,32 @@
 @import "compass";
 
+#index {
+  #content {
+    .content-wrap {
+      background: url(../image/main_building.jpg) top right no-repeat;
+    }
+  }
+}
+
+#footer {
+  width: 100%;
+  min-width: 960px;
+  text-align: center;
+  height: 183px;
+  background-color: #791200;
+  overflow: hidden;
+
+  .bg {
+    height: 183px;
+    width: 960px;
+    margin: auto;
+    background: url(../image/footer_bg.jpg) top left no-repeat;
+  }
+
+  .site-info {
+    padding-top: 20px;
+  }
+}
 .form-block {
   width: 400px;
 

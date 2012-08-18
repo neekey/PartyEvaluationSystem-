@@ -1,0 +1,44 @@
+/* line 1, ../../sass/common/reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+
+/* line 1, ../../sass/common/reset.scss */
+body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, \5b8b\4f53; }
+
+/* line 1, ../../sass/common/reset.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+/* line 1, ../../sass/common/reset.scss */
+address, cite, dfn, em, var { font-style: normal; }
+
+/* line 1, ../../sass/common/reset.scss */
+code, kbd, pre, samp { font-family: courier new,courier,monospace; }
+
+/* line 1, ../../sass/common/reset.scss */
+small { font-size: 12px; }
+
+/* line 1, ../../sass/common/reset.scss */
+ul, ol { list-style: none; }
+
+/* line 1, ../../sass/common/reset.scss */
+a { text-decoration: none; }
+
+/* line 1, ../../sass/common/reset.scss */
+a:hover { text-decoration: underline; }
+
+/* line 1, ../../sass/common/reset.scss */
+sup { vertical-align: text-top; }
+
+/* line 1, ../../sass/common/reset.scss */
+sub { vertical-align: text-bottom; }
+
+/* line 1, ../../sass/common/reset.scss */
+legend { color: #000; }
+
+/* line 1, ../../sass/common/reset.scss */
+fieldset, img { border: 0; }
+
+/* line 1, ../../sass/common/reset.scss */
+button, input, select, textarea { font-size: 100%; }
+
+/* line 1, ../../sass/common/reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }

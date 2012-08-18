@@ -1,0 +1,8 @@
+/* line 6, ../sass/grassroot_index.scss */
+#content .main .block-decoration { color: #b21f2a; font-size: 14px; }
+/* line 9, ../sass/grassroot_index.scss */
+#content .main .block-decoration p { text-indent: 2em; }
+/* line 15, ../sass/grassroot_index.scss */
+#content .main .brief-info .title { color: #b21f2a; font-size: 16px; font-weight: bold; text-align: center; margin-bottom: 10px; }
+/* line 22, ../sass/grassroot_index.scss */
+#content .main .brief-info .info-table { margin: auto; width: 376px; }

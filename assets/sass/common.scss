@@ -4,21 +4,17 @@
 
 /* 引入 normalize, 用于reset样式 */
 @import "common/normalize.scss";
+@import "common/reset.scss";
 @import "compass";
 
 @import "common/header.scss";
 @import "common/footer.scss";
 @import "common/content.scss";
+@import "common/content_layout.scss";
 
 body {
   background-image: url(../image/main_bg.jpg);
 }
-
-
-
-
-
-
 
 /*=== 通用组件 mods ===*/
 
@@ -49,6 +45,7 @@ input[type="button"].menu-button {
   color: #991d1d;
   border: none;
   display: inline-block;
+  font-size: 16px;
   /*box-shadow: 1px 1px 1px red;*/
 }
 
@@ -225,5 +222,40 @@ input[type="button"].form-button{
   .form-button {
     margin-right: 20px;
   }
+}
+
+/* 表格 */
+.info-table {
+  $borderColor: #a50005;
+  background: white;
+  border-collapse: collapse;
+  color: $borderColor;
+  font-size: 16px;
+  border: 1px solid $borderColor;
+
+  th, td {
+    border: 1px solid $borderColor;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .colord {
+    background-color: $borderColor;
+    color: white;
+  }
+}
+
+/* 菜单右侧border*/
+.decorade-border {
+  background-image: url(../image/side_border.png);
+  background-position: top right;
+  background-repeat: repeat-y;
+}
+
+.left-border {
+  background-position: top left;
+}
+.right-border {
+  background-position: top right;
 }
 

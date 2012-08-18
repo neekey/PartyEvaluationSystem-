@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="utf8">
-        <?php include "mods/assets.common.php"; ?>
-        <link rel="stylesheet" type="text/css" href="assets/lib/css/formalize.css">
-        <link rel="stylesheet" type="text/css" href="assets/stylesheet/index.css">
-        <script type="text/javascript" src="assets/javascript/lib-min.js"></script>
-        <script type="text/javascript" src="assets/javascript/index-min.js"></script>
+        <?php include "../mods/assets.common.php"; ?>
+        <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
+        <link rel="stylesheet" type="text/css" href="../assets/stylesheet/index.css">
+        <script type="text/javascript" src="../assets/javascript/lib-min.js"></script>
+        <script type="text/javascript" src="../assets/javascript/index-min.js"></script>
     </head>
     <body id="index">
-        <?php include "mods/header.php"; ?>
+        <?php include "../mods/header.php"; ?>
         <div id="content">
             <div class="content-wrap">
                 <!--登陆表单-->
@@ -99,7 +99,7 @@
                 </div>
                 <!--站点通用信息，Copyright等-->
                 <div class="site-info">
-                    <?php include "mods/copyright.php"; ?>
+                    <?php include "../mods/copyright.php"; ?>
                 </div>
             </div>
         </div>
