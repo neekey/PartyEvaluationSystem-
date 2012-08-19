@@ -304,10 +304,10 @@ body { background-image: url(../image/main_bg.jpg); }
 
 /* 页面中的主要内容的容器 */
 /* line 87, ../sass/common.scss */
-.main-block { background: white; padding: 5px; margin: 0 25px 0 25px; }
+.main-block { background: white; padding: 5px; }
 
 /* line 93, ../sass/common.scss */
-.main-block-wrap { border: 1px solid #eacaca; position: relative; height: 400px; }
+.main-block-wrap { border: 1px solid #eacaca; position: relative; padding: 60px 20px 60px 20px; }
 
 /* 标题 */
 /* line 100, ../sass/common.scss */
@@ -331,39 +331,80 @@ body { background-image: url(../image/main_bg.jpg); }
 /* line 153, ../sass/common.scss */
 .main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
 
+/* line 165, ../sass/common.scss */
+.main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
+/* line 173, ../sass/common.scss */
+.main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
+/* line 178, ../sass/common.scss */
+.main-block .finish-count .count { float: right; margin-left: 10px; }
+
 /* 表单 */
-/* line 166, ../sass/common.scss */
+/* line 185, ../sass/common.scss */
 .control-group { overflow: hidden; *zoom: 1; margin-bottom: 2px; }
-/* line 177, ../sass/common.scss */
+/* line 196, ../sass/common.scss */
 .control-group .control-label { float: left; text-align: right; width: 109px; height: 30px; padding-right: 20px; text-align: right; line-height: 30px; color: #aa002a; display: block; margin-right: 30px; background: url(../image/form_label_bg.png); }
-/* line 191, ../sass/common.scss */
-.control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
-/* line 201, ../sass/common.scss */
-.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img { margin-top: 1px; height: 28px; width: 170px; border: #cf999e 1px solid; color: #aa002a; font-weight: bold; }
 /* line 210, ../sass/common.scss */
+.control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
+/* line 220, ../sass/common.scss */
+.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img { margin-top: 1px; height: 28px; width: 170px; border: #cf999e 1px solid; color: #aa002a; font-weight: bold; }
+/* line 229, ../sass/common.scss */
 .control-group .controls .verify-code-img { height: 26px; }
-/* line 214, ../sass/common.scss */
+/* line 233, ../sass/common.scss */
 .control-group .controls .short { width: 82px; }
 
-/* line 220, ../sass/common.scss */
+/* line 239, ../sass/common.scss */
 .action-group { margin-top: 20px; }
-/* line 222, ../sass/common.scss */
+/* line 241, ../sass/common.scss */
 .action-group .form-button { margin-right: 20px; }
 
 /* 表格 */
-/* line 228, ../sass/common.scss */
+/* line 247, ../sass/common.scss */
 .info-table { background: white; border-collapse: collapse; color: #a50005; font-size: 16px; border: 1px solid #a50005; }
-/* line 236, ../sass/common.scss */
+/* line 255, ../sass/common.scss */
 .info-table th, .info-table td { border: 1px solid #a50005; padding: 0 10px; text-align: center; }
-/* line 242, ../sass/common.scss */
+/* line 261, ../sass/common.scss */
 .info-table .colord { background-color: #a50005; color: white; }
 
 /* 菜单右侧border*/
-/* line 249, ../sass/common.scss */
+/* line 268, ../sass/common.scss */
 .decorade-border { background-image: url(../image/side_border.png); background-position: top right; background-repeat: repeat-y; }
 
-/* line 255, ../sass/common.scss */
+/* line 274, ../sass/common.scss */
 .left-border { background-position: top left; }
 
-/* line 258, ../sass/common.scss */
+/* line 277, ../sass/common.scss */
 .right-border { background-position: top right; }
+
+/* 评分进度 */
+/* line 282, ../sass/common.scss */
+.process-bar { height: 28px; }
+/* line 286, ../sass/common.scss */
+.process-bar .item { width: 131px; height: 28px; line-height: 28px; margin-left: 9px; background: url(../image/process_active_bg.png) no-repeat top left; float: left; color: white; text-align: center; font-size: 16px; }
+/* line 298, ../sass/common.scss */
+.process-bar .finished { background: url(../image/process_unactive_bg.png) no-repeat top left; }
+
+/* 评分表单 */
+/* line 304, ../sass/common.scss */
+.score-form { background-color: white; }
+/* line 307, ../sass/common.scss */
+.score-form .score-form-block .block-title { margin-bottom: 25px; }
+/* line 310, ../sass/common.scss */
+.score-form .score-form-block .question-list { margin-left: 20px; }
+/* line 314, ../sass/common.scss */
+.score-form .score-form-block .question-list .options { height: 25px; margin-left: 15px; margin-bottom: 20px; }
+/* line 318, ../sass/common.scss */
+.score-form .score-form-block .question-list .options label { width: 140px; float: left; height: 25px; display: block; line-height: 25px; text-align: left; }
+/* line 326, ../sass/common.scss */
+.score-form .score-form-block .question-list .options label input { margin-right: 5px; }
+/* line 333, ../sass/common.scss */
+.score-form .score-form-block .question-textarea { margin-left: 20px; }
+/* line 335, ../sass/common.scss */
+.score-form .score-form-block .question-textarea .desc { height: 20px; }
+/* line 337, ../sass/common.scss */
+.score-form .score-form-block .question-textarea .desc .tip { float: left; }
+/* line 340, ../sass/common.scss */
+.score-form .score-form-block .question-textarea .desc .count { float: right; }
+/* line 344, ../sass/common.scss */
+.score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
+/* line 355, ../sass/common.scss */
+.score-form .error { color: red; }

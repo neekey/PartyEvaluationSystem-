@@ -87,13 +87,13 @@ input[type="button"].form-button{
 .main-block {
   background: white;
   padding: 5px;
-  margin: 0 25px 0 25px;
+  //margin: 0 25px 0 25px;
 }
 
 .main-block-wrap {
   border: 1px solid #eacaca;
   position: relative;
-  height: 400px;
+  padding: 60px 20px 60px 20px;
 }
 
 /* 标题 */
@@ -160,6 +160,25 @@ input[type="button"].form-button{
   color: white;
   text-align: center;
   line-height: 26px;
+}
+
+.main-block .finish-count {
+  position: absolute;
+  height: 25px;
+  width: 200px;
+  bottom: 25px;
+  right: 170px;
+  font-size: 14px;
+  
+  .tip {
+    float: right;
+    color: red;
+    font-weight: bold;
+  }
+  .count {
+    float: right;
+    margin-left: 10px;
+  }
 }
 
 /* 表单 */
@@ -257,5 +276,84 @@ input[type="button"].form-button{
 }
 .right-border {
   background-position: top right;
+}
+
+/* 评分进度 */
+.process-bar {
+
+  height: 28px;
+
+  .item {
+    width: 131px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 9px;
+    background: url(../image/process_active_bg.png) no-repeat top left;
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .finished {
+    background: url(../image/process_unactive_bg.png) no-repeat top left;
+  }
+}
+
+/* 评分表单 */
+.score-form {
+  background-color: white;
+  .score-form-block {
+    .block-title {
+      margin-bottom: 25px;
+    }
+    .question-list {
+      margin-left: 20px;
+      .desc {
+      }
+      .options {
+        height: 25px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        label {
+          width: 140px;
+          float: left;
+          height: 25px;
+          display: block;
+          line-height: 25px;
+          text-align: left;
+
+          input {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .question-textarea {
+      margin-left: 20px;
+      .desc {
+        height: 20px;
+        .tip {
+          float: left;
+        }
+        .count {
+          float: right;
+        }
+      }
+      textarea {
+        height: 128px;
+        border: #efd3d7 1px solid;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .error {
+    color: red;
+  }
 }
 
