@@ -1,0 +1,11 @@
+/* line 1, ../sass/new_account.scss */
+.main-block-wrap { text-align: center; }
+
+/* line 4, ../sass/new_account.scss */
+.new-form { margin: auto; width: 420px; }
+
+/* line 8, ../sass/new_account.scss */
+.action-button { margin-right: 21px; margin-left: 4px; }
+
+/* line 12, ../sass/new_account.scss */
+.control-group { margin-bottom: 12px; }

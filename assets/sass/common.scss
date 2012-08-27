@@ -83,6 +83,10 @@ input[type="button"].form-button{
   cursor: pointer;
 }
 
+input.action-button, button.action-button {
+  height: 30px;
+}
+
 /* 页面中的主要内容的容器 */
 .main-block {
   background: white;
@@ -189,6 +193,7 @@ input[type="button"].form-button{
 
   $inputNormalWidth: 170px;
   $inputShortWidth: 82px;
+  $inputLongWidth: 200px;
   $formTextColor: #aa002a;
 
   margin-bottom: 2px;
@@ -215,6 +220,11 @@ input[type="button"].form-button{
     }
   }
 
+  .control-long-label {
+    background: url(../image/form_long_label_bg.png);
+    width: 166px;
+  }
+
   .controls {
 
     input, select, .verify-code-img {
@@ -232,6 +242,10 @@ input[type="button"].form-button{
 
     .short {
       width: $inputShortWidth;
+    }
+
+    .long {
+      width: $inputLongWidth;
     }
   }
 }
