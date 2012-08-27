@@ -1,0 +1,20 @@
+.main-info {
+  font-size: 30px;
+  text-align: center;
+  color: #a80006;
+  font-weight: bold;
+}
+.action {
+  text-align: center;
+
+  a {
+    color: #a80006;
+    display: block;
+    font-size: 24px;
+    padding-left: 50px;
+    text-align: left;
+    background: url(../image/result_icon.png) no-repeat left top;
+    width: 150px;
+    margin: 25px auto auto auto;
+  }
+}

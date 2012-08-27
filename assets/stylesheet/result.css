@@ -1,0 +1,7 @@
+/* line 1, ../sass/result.scss */
+.main-info { font-size: 30px; text-align: center; color: #a80006; font-weight: bold; }
+
+/* line 7, ../sass/result.scss */
+.action { text-align: center; }
+/* line 10, ../sass/result.scss */
+.action a { color: #a80006; display: block; font-size: 24px; padding-left: 50px; text-align: left; background: url(../image/result_icon.png) no-repeat left top; width: 150px; margin: 25px auto auto auto; }
