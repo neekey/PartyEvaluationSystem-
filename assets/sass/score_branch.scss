@@ -1,0 +1,45 @@
+.result-list {
+  width: 530px;
+  margin: auto;
+  padding-left: 60px;
+  div {
+    margin-bottom: 10px;
+  }
+
+  .form-head {
+    padding-left: 230px;
+    span {
+      margin-right: 30px;
+      font-size: 14px;
+      color: #AA002A;
+      font-weight: bold;
+    }
+  }
+}
+.form-header {
+
+  height: 30px;
+  width: 410px;
+  margin: -50px 0 20px 160px;
+  .result-download {
+    float: right;
+  }
+
+  .brief {
+    float: left;
+    font-size: 16px;
+  }
+}
+
+.branch-list {
+  width: 720px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bread-crumbs {
+  .action-button {
+    float: right;
+    margin-left: 15px;
+  }
+}

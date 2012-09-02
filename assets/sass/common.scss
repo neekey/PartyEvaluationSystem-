@@ -241,6 +241,14 @@ $formTextColor: #aa002a;
     line-height: 26px;
     text-align: center;
   }
+
+  .form-input-list {
+    float: left;
+    padding-left: 1px;
+    .form-input-like, .form-input-like-long, .form-input-like-short {
+      margin-left: -1px;
+    }
+  }
 }
 
 .control-group {
@@ -460,4 +468,32 @@ i.icon {
 
 .icon-error {
   background-image: url(../image/icon-error.png);
+}
+
+/* Tag */
+.tag {
+  width: 79px;
+  height: 28px;
+  background-image: url(../image/tag.png);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* 面包屑 */
+.bread-crumbs {
+
+  height: 30px;
+  .tag {
+    float: left;
+  }
+
+  .pos {
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    line-height: 28px;
+    font-weight: bold;
+  }
 }

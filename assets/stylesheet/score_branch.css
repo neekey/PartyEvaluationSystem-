@@ -1,0 +1,21 @@
+/* line 1, ../sass/score_branch.scss */
+.result-list { width: 530px; margin: auto; padding-left: 60px; }
+/* line 5, ../sass/score_branch.scss */
+.result-list div { margin-bottom: 10px; }
+/* line 9, ../sass/score_branch.scss */
+.result-list .form-head { padding-left: 230px; }
+/* line 11, ../sass/score_branch.scss */
+.result-list .form-head span { margin-right: 30px; font-size: 14px; color: #AA002A; font-weight: bold; }
+
+/* line 19, ../sass/score_branch.scss */
+.form-header { height: 30px; width: 410px; margin: -50px 0 20px 160px; }
+/* line 24, ../sass/score_branch.scss */
+.form-header .result-download { float: right; }
+/* line 28, ../sass/score_branch.scss */
+.form-header .brief { float: left; font-size: 16px; }
+
+/* line 34, ../sass/score_branch.scss */
+.branch-list { width: 720px; margin-bottom: 20px; margin-top: 20px; }
+
+/* line 41, ../sass/score_branch.scss */
+.bread-crumbs .action-button { float: right; margin-left: 15px; }
