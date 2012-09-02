@@ -27,7 +27,7 @@
                 </colgroup>
                 <tbody>
                 <tr>
-                    <td class="colord"><a href="#">第 1 党支部</a></i></td>
+                    <td class="colord"><a href="#">第 1 党支部</a></td>
                     <td class="colord"><a href="#">第 1 党支部</a></td>
                     <td class="colord"><a href="#">第 1 党支部</a></td>
                     <td><a href="#">第 1 党支部</a></td>

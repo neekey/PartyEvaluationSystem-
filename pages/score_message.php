@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>评分页面</title>
+    <title>学院党委评分并写寄语</title>
     <?php include "../mods/assets.common.php"; ?>
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score_message.css" media="all">
 </head>
 <body>
 <?php include "../mods/header.php"; ?>
@@ -12,32 +12,48 @@
     <div class="content-wrap">
         <div class="side">
             <ul class="menu">
-                <li class="item"><a href="#" class="menu-button">支部评分</a></li>
+                <li class="item"><a href="#" class="menu-button menu-button-hover">支部评分</a></li>
+                <li class="item"><a href="#" class="menu-button">评分结果</a></li>
+                <li class="item"><a href="#" class="menu-button">生成账号</a></li>
                 <li class="item"><a href="#" class="menu-button">修改密码</a></li>
                 <li class="item"><a href="#" class="menu-button">注销登陆</a></li>
             </ul>
         </div>
         <div class="main decorade-border left-border">
-            <ul class="process-bar">
-                <li class="item finished">愿景体系</li>
-                <li class="item finished">学习系统</li>
-                <li class="item">知识系统</li>
-                <li class="item">人员系统</li>
-                <li class="item">保障系统</li>
-            </ul>
+            <table class="red-table branch-list">
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td class="colord"><a href="#">第 1 党支部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-pass"></i></td>
+                </tr>
+                <tr>
+                    <td><a href="#">第 1 党支部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                </tr>
+                <tr>
+                    <td><a href="#">第 1 党支部</a><i class="icon icon-pass"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                    <td><a href="#">第 1 党支 部</a><i class="icon icon-error"></i></td>
+                </tr>
+                </tbody>
+            </table>
             <div class="main-block">
                 <div class="main-block-wrap">
-                    <div class="title">知识系统</div>
+                    <div class="title">第一党支部</div>
                     <div class="decorator-top"></div>
                     <div class="decorator-bottom"></div>
-                    <div class="page-button">
-                        <div class="prev">上一页</div>
-                        <div class="next">下一页</div>
-                    </div>
-                    <div class="finish-count">
-                        <p class="count"><span class="current">4</span>/<span class="max">6</span></p>
-                        <p class="tip">尚有题目未完成!</p>
-                    </div>
                     <form class="score-form">
                         <div class="score-form-block">
                             <!--标题-->
@@ -113,6 +129,9 @@
                                 </div>
                                 <textarea placeholder="请填入支部寄语" name=""></textarea>
                             </div>
+                        </div>
+                        <div class="actions">
+                            <input type="submit" class="action-button" value="保存">
                         </div>
                     </form>
                 </div>
