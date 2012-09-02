@@ -1,10 +1,10 @@
 /* footer */
 /* line 4, ../../sass/common/copyright.scss */
-.site-info { overflow: hidden; *zoom: 1; clear: both; margin-top: 20px; }
+.site-info { overflow: hidden; *zoom: 1; clear: both; padding-top: 40px; }
 /* line 10, ../../sass/common/copyright.scss */
 .site-info .copyright p { margin: 0; color: #e1e37a; font-size: 12px; line-height: 16px; }
 
 /* line 4, ../../sass/common/footer.scss */
-#footer { width: 100%; min-width: 960px; text-align: center; height: 183px; background-color: #791200; overflow: hidden; }
+#footer { width: 100%; min-width: 960px; text-align: center; height: 105px; background-color: #791200; overflow: hidden; }
 /* line 12, ../../sass/common/footer.scss */
-#footer .bg { height: 183px; width: 960px; margin: auto; background: url(../image/footer_bg.jpg) top left no-repeat; }
+#footer .bg { height: 105px; width: 960px; margin: auto; background: url(../image/footer_common_bg.jpg) left top no-repeat; }

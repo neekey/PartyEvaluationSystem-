@@ -77,7 +77,7 @@ input[type="button"].form-button{
   text-align: center;
   color: white;
   line-height: 26px;
-/*display: inline-block;*/
+  display: inline-block;
 /*padding: 0 10px 0 10px;*/
   border: 2px solid white;
   cursor: pointer;
@@ -186,31 +186,75 @@ input.action-button, button.action-button {
 }
 
 /* 表单 */
+$inputNormalWidth: 170px;
+$inputShortWidth: 82px;
+$inputLongWidth: 200px;
+$formTextColor: #aa002a;
+
+.form-label-like {
+  text-align: right;
+  width: 109px;
+  height: 30px;
+  padding-right: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: $formTextColor;
+  display: block;
+  background: url(../image/form_label_bg.png);
+}
+
+.form-label-like-long {
+  @extend .form-label-like;
+  background: url(../image/form_long_label_bg.png);
+  width: 166px;
+}
+
+.form-input-like {
+  margin-top: 1px;
+  height: 26px;
+  width: $inputNormalWidth;
+  border: #cf999e 1px solid;
+  color: $formTextColor;
+  font-weight: bold;
+  background-color: white;
+}
+
+.form-input-like-long {
+  @extend .form-input-like;
+  width: $inputLongWidth;
+}
+
+.form-input-like-short {
+  @extend .form-input-like;
+  width: $inputShortWidth;
+}
+
+.form-like {
+  @include clearfix();
+  .form-label-like, .form-label-like-long, .form-label-like-short {
+    float: left;
+    margin-right: 30px;
+    clear: left;
+  }
+  .form-input-like, .form-input-like-long, .form-input-like-short {
+    float: left;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
 .control-group {
 
   // 清楚浮动
   @include clearfix();
 
-  $inputNormalWidth: 170px;
-  $inputShortWidth: 82px;
-  $inputLongWidth: 200px;
-  $formTextColor: #aa002a;
-
   margin-bottom: 2px;
 
   .control-label {
 
-    float: left;
-    text-align: right;
-    width: 109px;
-    height: 30px;
-    padding-right: 20px;
-    text-align: right;
-    line-height: 30px;
-    color: $formTextColor;
-    display: block;
+    @extend .form-label-like;
     margin-right: 30px;
-    background: url(../image/form_label_bg.png);
+    float: left;
 
     .tip {
       display: block;
@@ -223,17 +267,14 @@ input.action-button, button.action-button {
   .control-long-label {
     background: url(../image/form_long_label_bg.png);
     width: 166px;
+
   }
 
   .controls {
 
-    input, select, .verify-code-img {
-      margin-top: 1px;
+    input, select, .verify-code-img, .info-block {
+      @extend .form-input-like;
       height: 28px;
-      width: $inputNormalWidth;
-      border: #cf999e 1px solid;
-      color: $formTextColor;
-      font-weight: bold;
     }
 
     .verify-code-img {
@@ -257,6 +298,8 @@ input.action-button, button.action-button {
   }
 }
 
+
+
 /* 表格 */
 .info-table {
   $borderColor: #a50005;
@@ -275,6 +318,36 @@ input.action-button, button.action-button {
   .colord {
     background-color: $borderColor;
     color: white;
+  }
+}
+
+.red-table {
+  $borderColor: #ee0000;
+  background: white;
+  border-collapse: collapse;
+  color: $borderColor;
+  font-size: 16px;
+  border: 1px solid $borderColor;
+  border-top-width: 4px;
+
+  th, td {
+    border: 1px solid $borderColor;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+
+    a {
+      color: $formTextColor;
+    }
+  }
+
+  .colord {
+    background-color: $borderColor;
+    color: white;
+
+    a {
+      color: white;
+    }
   }
 }
 
@@ -371,3 +444,20 @@ input.action-button, button.action-button {
   }
 }
 
+/* icon */
+i.icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+.icon-pass {
+  background-image: url(../image/icon-pass.png);
+}
+
+.icon-error {
+  background-image: url(../image/icon-error.png);
+}

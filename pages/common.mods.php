@@ -54,6 +54,17 @@
             </div>
         </div>
         <div class="mod-block">
+            <h3 class="title">Form-like</h3>
+            <div class="form-like">
+                <div class="form-label-like">hello</div>
+                <div class="form-input-like">hello</div>
+
+                <div class="form-label-like">hello</div>
+                <div class="form-input-like-short">hello</div>
+
+                <div class="form-label-like-long">hello</div>
+                <div class="form-input-like-long">hello</div>
+            </div>
             <h3 class="title">Form</h3>
             <div class="mod-wrap">
                 <form>
@@ -125,6 +136,41 @@
                             <td>25分</td>
                             <td>已评</td>
                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mod-block">
+            <h3 class="title">Red Form</h3>
+            <div class="mod-wrap">
+                <table class="red-table">
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>分值</th>
+                        <th>状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>愿景体系<i class="icon icon-pass"></i></td>
+                        <td>25分</td>
+                        <td class="colord">已评</td>
+                    </tr>
+                    <tr>
+                        <td>愿景体系</td>
+                        <td>25分<i class="icon icon-error"></i></td>
+                        <td>已评</td>
+                    </tr>
+                    <tr>
+                        <td>愿景体系</td>
+                        <td>25分</td>
+                        <td>已评</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

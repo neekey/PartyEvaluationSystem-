@@ -1,0 +1,6 @@
+/* line 4, ../../sass/common/content_layout.scss */
+#content .side { float: left; width: 158px; }
+/* line 8, ../../sass/common/content_layout.scss */
+#content .side .menu .item { margin-bottom: 15px; }
+/* line 14, ../../sass/common/content_layout.scss */
+#content .main { width: 720px; margin-left: 158px; padding-left: 47px; }

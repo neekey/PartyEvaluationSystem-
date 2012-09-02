@@ -1,0 +1,14 @@
+/* line 1, ../sass/score_result.scss */
+.score-table { width: 720px; margin-bottom: 20px; }
+
+/* line 6, ../sass/score_result.scss */
+.form-header { height: 30px; width: 390px; margin: -50px 0 20px 160px; }
+/* line 11, ../sass/score_result.scss */
+.form-header .result-download { float: right; }
+/* line 15, ../sass/score_result.scss */
+.form-header .brief { float: left; font-size: 16px; }
+
+/* line 20, ../sass/score_result.scss */
+.result-list { width: 470px; margin: auto; padding-left: 60px; }
+/* line 24, ../sass/score_result.scss */
+.result-list div { margin-bottom: 10px; }

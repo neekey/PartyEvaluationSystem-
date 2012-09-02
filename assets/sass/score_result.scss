@@ -1,0 +1,27 @@
+.score-table {
+  width: 720px;
+  margin-bottom: 20px;
+}
+
+.form-header {
+
+  height: 30px;
+  width: 390px;
+  margin: -50px 0 20px 160px;
+  .result-download {
+    float: right;
+  }
+  
+  .brief {
+    float: left;
+    font-size: 16px;
+  }
+}
+.result-list {
+  width: 470px;
+  margin: auto;
+  padding-left: 60px;
+  div {
+    margin-bottom: 10px;
+  }
+}
