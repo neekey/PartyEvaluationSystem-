@@ -1,0 +1,37 @@
+
+
+.upload-form {
+  
+  text-align: center;
+
+  .uploader {
+    line-height: 28px;
+    color: red;
+    margin: auto;
+    width: 220px;
+    //padding-left: 100px;
+    .upload-wrap {
+      position: relative;
+      float: left;
+      margin-left: 10px;
+      input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0px;
+      }
+    }
+
+    .tip {
+      float: left;
+    }
+  }
+
+  .actions {
+    padding-top: 10px;
+    border-top: 1px dotted #999999;
+    margin: auto;
+    width: 200px;
+    margin-top: 10px;
+  }
+}
