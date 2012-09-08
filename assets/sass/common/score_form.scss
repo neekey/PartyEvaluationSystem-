@@ -1,0 +1,56 @@
+/* 评分表单 */
+.score-form {
+  background-color: white;
+  .score-form-block {
+    .block-title {
+      margin-bottom: 25px;
+    }
+    .question-list {
+      margin-left: 20px;
+      .desc {
+      }
+      .options {
+        height: 25px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        label {
+          width: 140px;
+          float: left;
+          height: 25px;
+          display: block;
+          line-height: 25px;
+          text-align: left;
+
+          input {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .question-textarea {
+      margin-left: 20px;
+      .desc {
+        height: 20px;
+        .tip {
+          float: left;
+        }
+        .count {
+          float: right;
+        }
+      }
+      textarea {
+        height: 128px;
+        border: #efd3d7 1px solid;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .error {
+    color: red;
+  }
+}

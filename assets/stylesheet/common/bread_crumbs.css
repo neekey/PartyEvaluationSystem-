@@ -1,0 +1,7 @@
+/* 面包屑 */
+/* line 2, ../../sass/common/bread_crumbs.scss */
+.bread-crumbs { height: 30px; }
+/* line 5, ../../sass/common/bread_crumbs.scss */
+.bread-crumbs .tag { float: left; }
+/* line 9, ../../sass/common/bread_crumbs.scss */
+.bread-crumbs .pos { float: left; font-size: 16px; margin-left: 10px; line-height: 28px; font-weight: bold; }

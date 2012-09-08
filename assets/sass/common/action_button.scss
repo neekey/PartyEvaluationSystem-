@@ -1,0 +1,17 @@
+/* 一般的按钮 */
+.action-button, input.action-button, button.action-button {
+  background: url(../image/action-button-bg.jpg) top left;
+  height: 26px;
+  width: 84px;
+  text-align: center;
+  color: white;
+  line-height: 26px;
+  display: inline-block;
+/*padding: 0 10px 0 10px;*/
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+input.action-button, button.action-button {
+  height: 30px;
+}

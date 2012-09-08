@@ -12,6 +12,7 @@
 <?php include "../mods/header.php"; ?>
 <div id="content">
     <div class="content-wrap">
+        <p class="login-welcome">欢迎登入，<span class="user-name">neekey</span>党员</p>
         <div class="side">
             <ul class="menu">
                 <li class="item"><a href="#" class="menu-button">支部评分</a></li>

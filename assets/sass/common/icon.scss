@@ -1,0 +1,17 @@
+/* icon */
+i.icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+.icon-pass {
+  background-image: url(../image/icon-pass.png);
+}
+
+.icon-error {
+  background-image: url(../image/icon-error.png);
+}

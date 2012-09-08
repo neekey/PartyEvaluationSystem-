@@ -1,0 +1,38 @@
+/* 左侧菜单按钮 */
+.menu-button,
+button.menu-button,
+input[type="reset"].menu-button,
+input[type="submit"].menu-button,
+input[type="button"].menu-button {
+  width: 128px;
+  height: 28px;
+  background: url(../image/menu-button.png) no-repeat top left;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  color: #991d1d;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+/*box-shadow: 1px 1px 1px red;*/
+}
+
+.menu-button:hover, .menu-button-hover {
+  background: url(../image/menu-button-hover.png) no-repeat top left;
+}
+
+.form-button,
+button.form-button,
+input[type="reset"].form-button
+input[type="submit"].form-button,
+input[type="button"].form-button{
+  height: 28px;
+  width: 105px;
+  background: url(../image/form_button_bg.png) no-repeat top left;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  color: #991d1d;
+  border: none;
+  display: inline-block;
+}

@@ -1,0 +1,6 @@
+/* 一般的按钮 */
+/* line 2, ../../sass/common/action_button.scss */
+.action-button, input.action-button, button.action-button { background: url(../image/action-button-bg.jpg) top left; height: 26px; width: 84px; text-align: center; color: white; line-height: 26px; display: inline-block; /*padding: 0 10px 0 10px;*/ border: 2px solid white; cursor: pointer; }
+
+/* line 15, ../../sass/common/action_button.scss */
+input.action-button, button.action-button { height: 30px; }

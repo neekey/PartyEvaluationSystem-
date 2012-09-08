@@ -1,0 +1,11 @@
+/* 块级内容的装饰 */
+.block-decoration {
+  background: url(../image/block-decoration-top.png) no-repeat top left;
+  margin: 10px;
+}
+
+.block-decoration-wrap {
+  background: url(../image/block-decoration-bottom.png) no-repeat bottom right;
+  padding: 30px 30px 30px 30px;
+
+}

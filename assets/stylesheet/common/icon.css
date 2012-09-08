@@ -1,0 +1,9 @@
+/* icon */
+/* line 2, ../../sass/common/icon.scss */
+i.icon { width: 15px; height: 15px; display: inline-block; overflow: hidden; background-repeat: no-repeat; margin-left: 10px; }
+
+/* line 11, ../../sass/common/icon.scss */
+.icon-pass { background-image: url(../image/icon-pass.png); }
+
+/* line 15, ../../sass/common/icon.scss */
+.icon-error { background-image: url(../image/icon-error.png); }

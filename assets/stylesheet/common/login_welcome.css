@@ -1,0 +1,4 @@
+/* line 1, ../../sass/common/login_welcome.scss */
+.login-welcome { font-size: 14px; color: #991D1D; margin-bottom: 20px; }
+/* line 5, ../../sass/common/login_welcome.scss */
+.login-welcome .user-name { margin: 0 5px 0 5px; font-weight: bold; }

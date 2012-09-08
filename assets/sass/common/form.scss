@@ -1,0 +1,120 @@
+/* 表单 */
+$inputNormalWidth: 170px;
+$inputShortWidth: 82px;
+$inputLongWidth: 200px;
+$formTextColor: #aa002a;
+
+.form-label-like {
+  text-align: right;
+  width: 109px;
+  height: 30px;
+  padding-right: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: $formTextColor;
+  display: block;
+  background: url(../image/form_label_bg.png);
+}
+
+.form-label-like-long {
+  @extend .form-label-like;
+  background: url(../image/form_long_label_bg.png);
+  width: 166px;
+}
+
+.form-input-like {
+  margin-top: 1px;
+  height: 26px;
+  width: $inputNormalWidth;
+  border: #cf999e 1px solid;
+  color: $formTextColor;
+  font-weight: bold;
+  background-color: white;
+}
+
+.form-input-like-long {
+  @extend .form-input-like;
+  width: $inputLongWidth;
+}
+
+.form-input-like-short {
+  @extend .form-input-like;
+  width: $inputShortWidth;
+}
+
+.form-like {
+  @include clearfix();
+  .form-label-like, .form-label-like-long, .form-label-like-short {
+    float: left;
+    margin-right: 30px;
+    clear: left;
+  }
+  .form-input-like, .form-input-like-long, .form-input-like-short {
+    float: left;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .form-input-list {
+    float: left;
+    padding-left: 1px;
+    .form-input-like, .form-input-like-long, .form-input-like-short {
+      margin-left: -1px;
+    }
+  }
+}
+
+.control-group {
+
+  // 清楚浮动
+  @include clearfix();
+
+  margin-bottom: 2px;
+
+  .control-label {
+
+    @extend .form-label-like;
+    margin-right: 30px;
+    float: left;
+
+    .tip {
+      display: block;
+      font-size: small;
+      color: #666;
+      margin-top: 5px;
+    }
+  }
+
+  .control-long-label {
+    background: url(../image/form_long_label_bg.png);
+    width: 166px;
+
+  }
+
+  .controls {
+
+    input, select, .verify-code-img, .info-block {
+      @extend .form-input-like;
+      height: 28px;
+    }
+
+    .verify-code-img {
+      height: 26px;
+    }
+
+    .short {
+      width: $inputShortWidth;
+    }
+
+    .long {
+      width: $inputLongWidth;
+    }
+  }
+}
+
+.action-group {
+  margin-top: 20px;
+  .form-button {
+    margin-right: 20px;
+  }
+}

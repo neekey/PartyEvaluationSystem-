@@ -1,0 +1,16 @@
+/* 面包屑 */
+.bread-crumbs {
+
+  height: 30px;
+  .tag {
+    float: left;
+  }
+
+  .pos {
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+}

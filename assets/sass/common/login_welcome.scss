@@ -1,0 +1,12 @@
+.login-welcome {
+  font-size: 14px;
+  color: #991D1D;
+  margin-bottom: 20px;
+  border-bottom: 1px #991D1D dotted;
+  padding-bottom: 5px;
+  text-align: right;
+  .user-name {
+    margin: 0 5px 0 0;
+    font-weight: bold;
+  }
+}
