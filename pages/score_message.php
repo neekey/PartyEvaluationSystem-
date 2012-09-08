@@ -55,6 +55,7 @@
                     <div class="title">第一党支部</div>
                     <div class="decorator-top"></div>
                     <div class="decorator-bottom"></div>
+                    <a href="#" class="action-button result-download">下载自评报告</a>
                     <form class="score-form">
                         <div class="score-form-block">
                             <!--标题-->

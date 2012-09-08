@@ -1,0 +1,25 @@
+/* 评分表单 */
+/* line 2, ../../sass/common/score_form.scss */
+.score-form { background-color: white; }
+/* line 5, ../../sass/common/score_form.scss */
+.score-form .score-form-block .block-title { margin-bottom: 25px; }
+/* line 8, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-list { margin-left: 20px; }
+/* line 12, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options { height: 25px; margin-left: 15px; margin-bottom: 20px; }
+/* line 16, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options label { width: 140px; float: left; height: 25px; display: block; line-height: 25px; text-align: left; }
+/* line 24, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options label input { margin-right: 5px; }
+/* line 31, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea { margin-left: 20px; }
+/* line 33, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc { height: 20px; }
+/* line 35, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .tip { float: left; }
+/* line 38, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .count { float: right; }
+/* line 42, ../../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
+/* line 53, ../../sass/common/score_form.scss */
+.score-form .error { color: red; }

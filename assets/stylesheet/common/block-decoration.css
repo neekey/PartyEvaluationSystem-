@@ -1,0 +1,6 @@
+/* 块级内容的装饰 */
+/* line 2, ../../sass/common/block-decoration.scss */
+.block-decoration { background: url(../image/block-decoration-top.png) no-repeat top left; margin: 10px; }
+
+/* line 7, ../../sass/common/block-decoration.scss */
+.block-decoration-wrap { background: url(../image/block-decoration-bottom.png) no-repeat bottom right; padding: 30px 30px 30px 30px; }

@@ -1,5 +1,9 @@
 /* line 1, ../sass/score_message.scss */
 .branch-list { width: 720px; margin-bottom: 20px; }
 
-/* line 9, ../sass/score_message.scss */
+/* 下载自评报告 */
+/* line 8, ../sass/score_message.scss */
+.result-download { position: absolute; top: 30px; right: 50px; }
+
+/* line 16, ../sass/score_message.scss */
 .score-form .actions { text-align: center; }

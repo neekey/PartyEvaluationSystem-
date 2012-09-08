@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>基层群众欢迎页面</title>
+    <title>学院党委登录成功欢迎界面</title>
     <?php include "../mods/assets.common.php"; ?>
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/grassroot_index.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/college_party_index.css" media="all">
 </head>
 <body>
 <?php include "../mods/header.php"; ?>
@@ -14,6 +14,8 @@
         <div class="side">
             <ul class="menu">
                 <li class="item"><a href="#" class="menu-button">支部评分</a></li>
+                <li class="item"><a href="#" class="menu-button">评分结果</a></li>
+                <li class="item"><a href="#" class="menu-button">生成账号</a></li>
                 <li class="item"><a href="#" class="menu-button">修改密码</a></li>
                 <li class="item"><a href="#" class="menu-button">注销登陆</a></li>
             </ul>
@@ -34,7 +36,7 @@
                 </div>
             </div>
             <div class="brief-info">
-                <p class="title">所属党支部：浙江工业大学计算机学院第一党支部</p>
+                <p class="title">所属党委：浙江工业大学计算机学院党委</p>
                 <table class="info-table">
                     <colgroup>
                         <col>
@@ -42,30 +44,27 @@
                     </colgroup>
                     <thead>
                     <tr>
-                        <th>项目</th>
-                        <th>分值</th>
+                        <th>党支部</th>
+                        <th>状态</th>
+                        <th>党支部</th>
                         <th>状态</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>愿景体系</td>
+                        <td>第一党支部</td>
                         <td>25分</td>
+                        <td>第一党支部</td>
                         <td class="colord">未评</td>
                     </tr>
                     <tr>
-                        <td>愿景体系</td>
-                        <td>25分</td>
-                        <td>已评</td>
-                    </tr>
-                    <tr>
-                        <td>愿景体系</td>
-                        <td>25分</td>
-                        <td>已评</td>
+                        <td>第一党支部</td>
+                        <td class="colord">未评</td>
+                        <td>第一党支部</td>
+                        <td>未评</td>
                     </tr>
                     </tbody>
                 </table>
-                <a class="start-score action-button" href="#">开始评分</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,35 @@
+/* 页面中的主要内容的容器 */
+/* line 2, ../../sass/common/main_block.scss */
+.main-block { background: white; padding: 5px; }
+
+/* line 8, ../../sass/common/main_block.scss */
+.main-block-wrap { border: 1px solid #eacaca; position: relative; padding: 60px 20px 60px 20px; }
+
+/* 标题 */
+/* line 15, ../../sass/common/main_block.scss */
+.main-block .title { width: 162px; height: 35px; background: url(../image/main-block-title-bg.png) no-repeat top left; position: absolute; top: 8px; left: -9px; text-align: center; line-height: 28px; color: white; }
+
+/* 右上角的三角装饰 */
+/* line 28, ../../sass/common/main_block.scss */
+.main-block .decorator-top { width: 45px; height: 45px; background: url(../image/main-block-decorator-top.png) no-repeat top left; position: absolute; top: -3px; right: -3px; }
+
+/* 左下角的三角装饰 */
+/* line 38, ../../sass/common/main_block.scss */
+.main-block .decorator-bottom { width: 45px; height: 45px; background: url(../image/main-block-decorator-bottom.png) no-repeat top left; position: absolute; bottom: -3px; left: -3px; }
+
+/* 翻页按钮 */
+/* line 48, ../../sass/common/main_block.scss */
+.main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
+
+/* line 56, ../../sass/common/main_block.scss */
+.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; }
+
+/* line 68, ../../sass/common/main_block.scss */
+.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
+
+/* line 80, ../../sass/common/main_block.scss */
+.main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
+/* line 88, ../../sass/common/main_block.scss */
+.main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
+/* line 93, ../../sass/common/main_block.scss */
+.main-block .finish-count .count { float: right; margin-left: 10px; }

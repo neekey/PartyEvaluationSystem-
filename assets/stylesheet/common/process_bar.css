@@ -1,0 +1,7 @@
+/* 评分进度 */
+/* line 2, ../../sass/common/process_bar.scss */
+.process-bar { height: 28px; }
+/* line 6, ../../sass/common/process_bar.scss */
+.process-bar .item { width: 131px; height: 28px; line-height: 28px; margin-left: 9px; background: url(../image/process_active_bg.png) no-repeat top left; float: left; color: white; text-align: center; font-size: 16px; }
+/* line 18, ../../sass/common/process_bar.scss */
+.process-bar .finished { background: url(../image/process_unactive_bg.png) no-repeat top left; }
