@@ -477,9 +477,11 @@ i.icon { width: 15px; height: 15px; display: inline-block; overflow: hidden; bac
 .score-form .score-form-block .question-textarea .desc .tip { float: left; }
 /* line 38, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea .desc .count { float: right; }
-/* line 42, ../sass/common/score_form.scss */
+/* line 41, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .count-overflow { color: red; font-weight: bold; }
+/* line 46, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
-/* line 53, ../sass/common/score_form.scss */
+/* line 57, ../sass/common/score_form.scss */
 .score-form .error { color: red; }
 
 /** 消息提示 */

@@ -4,7 +4,7 @@
  * @author Neekey <ni184775761@gmail.com>
  * @date 2012.08
  */
-seajs.use([ 'jquery', 'lib/slides.jquery' ], function() {
+seajs.use([ 'common/formCheck', 'lib/slides.jquery' ], function( FormCheck ) {
     'use strict';
 
     $(document).ready(function () {
@@ -22,5 +22,9 @@ seajs.use([ 'jquery', 'lib/slides.jquery' ], function() {
             autoHeight: true,
             play: 5000
         });
+
+        var formHook = '.J_LoginForm';
+        var tipHook = '.J_Tip';
+        FormCheck( formHook, tipHook );
     });
 });

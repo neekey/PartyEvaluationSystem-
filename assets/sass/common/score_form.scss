@@ -38,6 +38,10 @@
         .count {
           float: right;
         }
+        .count-overflow {
+          color: red;
+          font-weight: bold;
+        }
       }
       textarea {
         height: 128px;

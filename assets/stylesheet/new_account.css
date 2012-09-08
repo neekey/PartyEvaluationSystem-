@@ -399,14 +399,20 @@ input.action-button, button.action-button { height: 30px; }
 /* line 11, ../sass/common/decorade_border.scss */
 .right-border { background-position: top right; }
 
-/* line 9, ../sass/new_account.scss */
+/** 消息提示 */
+/* line 4, ../sass/common/tip.scss */
+.tip { background: #e8907d; padding: 5px 10px 5px 10px; color: white; }
+
+/* line 10, ../sass/new_account.scss */
 .main-block-wrap { text-align: center; }
 
-/* line 12, ../sass/new_account.scss */
+/* line 13, ../sass/new_account.scss */
 .new-form { margin: auto; width: 420px; }
-
 /* line 16, ../sass/new_account.scss */
-.action-button { margin-right: 21px; margin-left: 4px; }
+.new-form .tip { display: none; }
 
 /* line 20, ../sass/new_account.scss */
+.action-button { margin-right: 21px; margin-left: 4px; }
+
+/* line 24, ../sass/new_account.scss */
 .control-group { margin-bottom: 12px; }

@@ -4,6 +4,7 @@
 @import "common/menu_button.scss";
 @import "common/main_block.scss";
 @import "common/form.scss";
+@import "common/tip.scss";
 
 #index {
   #content {
@@ -33,8 +34,11 @@
   }
 }
 .form-block {
-  width: 400px;
 
+  width: 400px;
+  .tip {
+    display: none;
+  }
   .action-group {
     margin-top: 15px;
     .form-button {

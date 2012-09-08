@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../assets/stylesheet/index.css">
         <script type="text/javascript" src="../assets/javascript/lib/seajs.js"></script>
         <?php include "../mods/seajs.config.php"; ?>
+        <script type="text/javascript" src="../assets/javascript/lib/jquery.js"></script>
         <script type="text/javascript" src="../assets/javascript/index.js"></script>
     </head>
     <body id="index">
@@ -15,7 +16,7 @@
                 <!--登陆表单-->
                 <div class="block-decoration form-block">
                     <div class="block-decoration-wrap">
-                        <form>
+                        <form class="J_LoginForm">
                             <div class="control-group">
                                 <label class="control-label" for="field-type">选择类型</label>
                                 <div class="controls">
@@ -29,22 +30,23 @@
                             <div class="control-group">
                                 <label class="control-label" for="field-username">用户名</label>
                                 <div class="controls">
-                                    <input type="text" id="field-username" name="username" placeholder="请输入文字" />
+                                    <input type="text" id="field-username" name="username" class="required" data-msg-required="用户名不能为空" placeholder="请输入文字" />
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="field-password">密码</label>
                                 <div class="controls">
-                                    <input type="text" id="field-password" name="password" placeholder="请输入文字" />
+                                    <input type="password" id="field-password" name="password" class="required" data-msg-required="密码不能为空"placeholder="请输入文字" />
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="verify-code">检验码</label>
                                 <div class="controls">
-                                    <input class="short" id="verify-code" name="code" type="text" placeholder="请输入文字" />
+                                    <input class="short required" id="verify-code" name="code" type="text" data-msg-required="检验码不能为空" placeholder="请输入文字" />
                                     <img src="http://placehold.it/82x26" class="verify-code-img short"/>
                                 </div>
                             </div>
+                            <div class="tip J_Tip"></div>
                             <div class="action-group ">
                                 <input type="submit" class="form-button" value="提交">
                                 <input type="reset" class="form-button" value="重置">

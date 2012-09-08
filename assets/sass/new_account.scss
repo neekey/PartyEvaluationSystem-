@@ -5,6 +5,7 @@
 @import "common/main_block.scss";
 @import "common/form.scss";
 @import "common/decorade_border.scss";
+@import "common/tip.scss";
 
 .main-block-wrap {
   text-align: center;
@@ -12,6 +13,9 @@
 .new-form {
   margin: auto;
   width: 420px;
+  .tip {
+    display: none;
+  }
 }
 .action-button {
   margin-right: 21px;

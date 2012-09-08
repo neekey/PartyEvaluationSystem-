@@ -428,9 +428,11 @@ input.action-button, button.action-button { height: 30px; }
 .score-form .score-form-block .question-textarea .desc .tip { float: left; }
 /* line 38, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea .desc .count { float: right; }
-/* line 42, ../sass/common/score_form.scss */
+/* line 41, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .count-overflow { color: red; font-weight: bold; }
+/* line 46, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
-/* line 53, ../sass/common/score_form.scss */
+/* line 57, ../sass/common/score_form.scss */
 .score-form .error { color: red; }
 
 /* line 11, ../sass/score.scss */

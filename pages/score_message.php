@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>学院党委评分并写寄语</title>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score_message.css" media="all">
+    <script type="text/javascript" src="../assets/javascript/lib/seajs.js"></script>
+    <?php include "../mods/seajs.config.php"; ?>
+    <script type="text/javascript" src="../assets/javascript/score_message.js"></script>
 </head>
 <body>
 <?php include "../mods/header.php"; ?>
@@ -126,9 +129,9 @@
                             <div class="question-textarea">
                                 <div class="desc">
                                     <p class="tip">请填写支部寄语，寄语字数不超过50个字</p>
-                                    <p class="count"><span class="current">10</span>/<span class="max">50</span></p>
+                                    <p class="count J_TextCounter"><span class="current J_CurCount">0</span>/<span class="max J_MaxCount">50</span></p>
                                 </div>
-                                <textarea placeholder="请填入支部寄语" name=""></textarea>
+                                <textarea class="J_GiftText" placeholder="请填入支部寄语" name=""></textarea>
                             </div>
                         </div>
                         <div class="actions">

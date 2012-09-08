@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/new_account.css" media="all">
+    <script type="text/javascript" src="../assets/javascript/lib/seajs.js"></script>
+    <?php include "../mods/seajs.config.php"; ?>
+    <script type="text/javascript" src="../assets/javascript/new_account.js"></script>
 </head>
 <body>
 <?php include "../mods/header.php"; ?>
@@ -26,9 +29,29 @@
                     <div class="decorator-top"></div>
                     <div class="decorator-bottom"></div>
                     <!--登陆表单-->
-                    <form class="new-form">
+                    <form class="new-form J_NewAccountForm">
                         <div class="control-group">
-                            <label class="control-label control-long-label" for="field-type">党员所属部门</label>
+                            <label class="control-label control-long-label" for="field-department">党员所属部门</label>
+                            <div class="controls">
+                                <select name="department" class="long" id="field-department">
+                                    <option>你好</option>
+                                    <option>我好</option>
+                                    <option>他好</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label control-long-label" for="field-branch">党员所属党支部</label>
+                            <div class="controls">
+                                <select name="branch" class="long" id="field-branch">
+                                    <option>你好</option>
+                                    <option>我好</option>
+                                    <option>他好</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label control-long-label" for="field-type">党员所属类型</label>
                             <div class="controls">
                                 <select name="type" class="long" id="field-type">
                                     <option>你好</option>
@@ -38,37 +61,18 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label control-long-label" for="field-username">党员所属党支部</label>
-                            <div class="controls">
-                                <select name="type" class="long" id="field-type">
-                                    <option>你好</option>
-                                    <option>我好</option>
-                                    <option>他好</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label control-long-label" for="field-password">党员所属类型</label>
-                            <div class="controls">
-                                <select name="type" class="long" id="field-type">
-                                    <option>你好</option>
-                                    <option>我好</option>
-                                    <option>他好</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label control-long-label" for="verify-code">党员学好或工号</label>
+                            <label class="control-label control-long-label" for="field-number">党员学号或工号</label>
                             <div class="controls ">
-                                <input type="text" class="long" id="field-password" name="password" placeholder="请输入文字" />
+                                <input type="text" class="long required" data-msg-required="党员学号或工号不能为空" id="field-number" name="number" placeholder="请输入文字" />
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label control-long-label" for="verify-code">党员姓名</label>
+                            <label class="control-label control-long-label" for="field-name">党员姓名</label>
                             <div class="controls ">
-                                <input type="text" class="long" id="field-password" name="password" placeholder="请输入文字" />
+                                <input type="text" class="long required" data-msg-required="党员姓名不能为空" id="field-name" name="username" placeholder="请输入文字" />
                             </div>
                         </div>
+                        <div class="tip J_Tip"></div>
                         <div class="action-group ">
                             <input type="submit" class="action-button" value="保存">
                             <input type="reset" class="action-button" value="重置">

@@ -1,0 +1,1 @@
+define(function(e,t,n){e("jquery");n.exports=function(e,t,n,r,i){var s=$(e),o=$(t),u=$(n),a=parseInt(u.text()),f=0;s.bind("change keyup",function(){var e=s.val().length;o.text(e);f<=a&&e>a?r(e,a):f>a&&e<=a&&i();f=e})}});
