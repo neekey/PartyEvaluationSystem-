@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>学院党委查看评分结果</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/upload_assessment.css" media="all">
 </head>
 <body>

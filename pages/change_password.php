@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>修改密码</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/new_account.css" media="all">

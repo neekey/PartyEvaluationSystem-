@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>学院党委评分并写寄语</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score_message.css" media="all">
 </head>
 <body>

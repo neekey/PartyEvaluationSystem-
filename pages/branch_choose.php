@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>学校组织选择学院</title>
-    <?php include "../mods/assets.common.php"; ?>
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/common.css">
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/branch_choose.css" media="all">
 </head>
 <body>

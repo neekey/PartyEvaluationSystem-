@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>学院党委登录成功欢迎界面</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/college_party_index.css" media="all">
 </head>
 <body>

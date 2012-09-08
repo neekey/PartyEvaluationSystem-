@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf8">
-        <?php include "../mods/assets.common.php"; ?>
         <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
         <link rel="stylesheet" type="text/css" href="../assets/stylesheet/index.css">
-        <script type="text/javascript" src="../assets/javascript/lib-min.js"></script>
-        <script type="text/javascript" src="../assets/javascript/index-min.js"></script>
+        <script type="text/javascript" src="../assets/javascript/lib/seajs.js"></script>
+        <?php include "../mods/seajs.config.php"; ?>
+        <script type="text/javascript" src="../assets/javascript/index.js"></script>
     </head>
     <body id="index">
         <?php include "../mods/header.php"; ?>
@@ -42,7 +42,7 @@
                                 <label class="control-label" for="verify-code">检验码</label>
                                 <div class="controls">
                                     <input class="short" id="verify-code" name="code" type="text" placeholder="请输入文字" />
-                                    <img src="http://dummyimage.com/82x26/985236/fff.png" class="verify-code-img short"/>
+                                    <img src="http://placehold.it/82x26" class="verify-code-img short"/>
                                 </div>
                             </div>
                             <div class="action-group ">

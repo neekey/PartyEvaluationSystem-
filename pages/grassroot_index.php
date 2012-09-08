@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>基层群众欢迎页面</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/grassroot_index.css" media="all">
 </head>
 <body>

@@ -1,2 +1,486 @@
-/* line 1, ../sass/score.scss */
+/** 全局样式 */
+/* 引入 normalize, 用于reset样式 */
+/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+/* Corrects `block` display not defined in IE6/7/8/9 & FF3. */
+/* line 21, ../sass/common/normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+/* Corrects `inline-block` display not defined in IE6/7/8/9 & FF3. */
+/* line 31, ../sass/common/normalize.scss */
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* Prevents modern browsers from displaying `audio` without controls. Remove excess height in iOS5 devices. */
+/* line 42, ../sass/common/normalize.scss */
+audio:not([controls]) { display: none; height: 0; }
+
+/* Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4. Known issue: no IE6 support. */
+/* line 52, ../sass/common/normalize.scss */
+[hidden] { display: none; }
+
+/* ========================================================================== Base ========================================================================== */
+/* 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using `em` units. 2. Prevents iOS text size adjust after orientation change, without disabling user zoom. */
+/* line 67, ../sass/common/normalize.scss */
+html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+/* Addresses `font-family` inconsistency between `textarea` and other form elements. */
+/* line 82, ../sass/common/normalize.scss */
+html, button, input, select, textarea { font-family: sans-serif; }
+
+/* Addresses margins handled incorrectly in IE6/7. */
+/* line 90, ../sass/common/normalize.scss */
+body { margin: 0; }
+
+/* ========================================================================== Links ========================================================================== */
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+/* line 102, ../sass/common/normalize.scss */
+a:focus { outline: thin dotted; }
+
+/* Improves readability when focused and also mouse hovered in all browsers. people.opera.com/patrickl/experiments/keyboard/test */
+/* line 112, ../sass/common/normalize.scss */
+a:active, a:hover { outline: 0; }
+
+/* ========================================================================== Typography ========================================================================== */
+/* Addresses font sizes and margins set differently in IE6/7. Addresses font sizes within `section` and `article` in FF4+, Chrome, S5. */
+/* line 125, ../sass/common/normalize.scss */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* line 130, ../sass/common/normalize.scss */
+h2 { font-size: 1.5em; margin: 0.83em 0; }
+
+/* line 135, ../sass/common/normalize.scss */
+h3 { font-size: 1.17em; margin: 1em 0; }
+
+/* line 140, ../sass/common/normalize.scss */
+h4 { font-size: 1em; margin: 1.33em 0; }
+
+/* line 145, ../sass/common/normalize.scss */
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+
+/* line 150, ../sass/common/normalize.scss */
+h6 { font-size: 0.75em; margin: 2.33em 0; }
+
+/* Addresses styling not present in IE7/8/9, S5, Chrome. */
+/* line 159, ../sass/common/normalize.scss */
+abbr[title] { border-bottom: 1px dotted; }
+
+/* Addresses style set to `bolder` in FF3+, S4/5, Chrome. */
+/* line 168, ../sass/common/normalize.scss */
+b, strong { font-weight: bold; }
+
+/* line 172, ../sass/common/normalize.scss */
+blockquote { margin: 1em 40px; }
+
+/* Addresses styling not present in S5, Chrome. */
+/* line 180, ../sass/common/normalize.scss */
+dfn { font-style: italic; }
+
+/* Addresses styling not present in IE6/7/8/9. */
+/* line 188, ../sass/common/normalize.scss */
+mark { background: #ff0; color: #000; }
+
+/* Addresses margins set differently in IE6/7. */
+/* line 198, ../sass/common/normalize.scss */
+p, pre { margin: 1em 0; }
+
+/* Corrects font family set oddly in IE6, S4/5, Chrome. en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* line 210, ../sass/common/normalize.scss */
+code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improves readability of pre-formatted text in all browsers. */
+/* line 220, ../sass/common/normalize.scss */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+/* Addresses CSS quotes not supported in IE6/7. */
+/* line 230, ../sass/common/normalize.scss */
+q { quotes: none; }
+
+/* Addresses `quotes` property not supported in S4. */
+/* line 239, ../sass/common/normalize.scss */
+q:before, q:after { content: ''; content: none; }
+
+/* line 244, ../sass/common/normalize.scss */
+small { font-size: 75%; }
+
+/* Prevents `sub` and `sup` affecting `line-height` in all browsers. gist.github.com/413930 */
+/* line 254, ../sass/common/normalize.scss */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 261, ../sass/common/normalize.scss */
+sup { top: -0.5em; }
+
+/* line 265, ../sass/common/normalize.scss */
+sub { bottom: -0.25em; }
+
+/* ========================================================================== Lists ========================================================================== */
+/* Addresses margins set differently in IE6/7. */
+/* line 280, ../sass/common/normalize.scss */
+dl, menu, ol, ul { margin: 1em 0; }
+
+/* line 284, ../sass/common/normalize.scss */
+dd { margin: 0 0 0 40px; }
+
+/* Addresses paddings set differently in IE6/7. */
+/* line 294, ../sass/common/normalize.scss */
+menu, ol, ul { padding: 0 0 0 40px; }
+
+/* Corrects list images handled incorrectly in IE7. */
+/* line 303, ../sass/common/normalize.scss */
+nav ul, nav ol { list-style: none; list-style-image: none; }
+
+/* ========================================================================== Embedded content ========================================================================== */
+/* 1. Removes border when inside `a` element in IE6/7/8/9, FF3. 2. Improves image quality when scaled in IE7. code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 318, ../sass/common/normalize.scss */
+img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
+
+/* Corrects overflow displayed oddly in IE9. */
+/* line 327, ../sass/common/normalize.scss */
+svg:not(:root) { overflow: hidden; }
+
+/* ========================================================================== Figures ========================================================================== */
+/* Addresses margin not present in IE6/7/8/9, S5, O11. */
+/* line 339, ../sass/common/normalize.scss */
+figure { margin: 0; }
+
+/* ========================================================================== Forms ========================================================================== */
+/* Corrects margin displayed oddly in IE6/7. */
+/* line 351, ../sass/common/normalize.scss */
+form { margin: 0; }
+
+/* Define consistent border, margin, and padding. */
+/* line 359, ../sass/common/normalize.scss */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Corrects color not being inherited in IE6/7/8/9. 2. Corrects text not wrapping in FF3. 3. Corrects alignment displayed oddly in IE6/7. */
+/* line 371, ../sass/common/normalize.scss */
+legend { border: 0; /* 1 */ padding: 0; white-space: normal; /* 2 */ *margin-left: -7px; /* 3 */ }
+
+/* 1. Corrects font size not being inherited in all browsers. 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome. 3. Improves appearance and consistency in all browsers. */
+/* line 387, ../sass/common/normalize.scss */
+button, input, select, textarea { font-size: 100%; /* 1 */ margin: 0; /* 2 */ vertical-align: baseline; /* 3 */ *vertical-align: middle; /* 3 */ }
+
+/* Addresses FF3/4 setting `line-height` on `input` using `!important` in the UA stylesheet. */
+/* line 400, ../sass/common/normalize.scss */
+button, input { line-height: normal; }
+
+/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Corrects inability to style clickable `input` types in iOS. 3. Improves usability and consistency of cursor style between image-type `input` and others. 4. Removes inner spacing in IE7 without affecting normal text inputs. Known issue: inner spacing remains in IE6. */
+/* line 417, ../sass/common/normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ *overflow: visible; /* 4 */ }
+
+/* Re-set default cursor for disabled elements. */
+/* line 428, ../sass/common/normalize.scss */
+button[disabled], input[disabled] { cursor: default; }
+
+/* 1. Addresses box sizing set to content-box in IE8/9. 2. Removes excess padding in IE8/9. 3. Removes excess padding in IE7. Known issue: excess padding remains in IE6. */
+/* line 440, ../sass/common/normalize.scss */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ *height: 13px; /* 3 */ *width: 13px; /* 3 */ }
+
+/* 1. Addresses `appearance` set to `searchfield` in S5, Chrome. 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz` to future-proof). */
+/* line 453, ../sass/common/normalize.scss */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/* Removes inner padding and search cancel button in S5, Chrome on OS X. */
+/* line 465, ../sass/common/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* Removes inner padding and border in FF3+. */
+/* line 474, ../sass/common/normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 1. Removes default vertical scrollbar in IE6/7/8/9. 2. Improves readability and alignment in all browsers. */
+/* line 484, ../sass/common/normalize.scss */
+textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
+
+/* ========================================================================== Tables ========================================================================== */
+/* Remove most spacing between table cells. */
+/* line 497, ../sass/common/normalize.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 1, ../sass/common/reset.scss */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+
+/* line 1, ../sass/common/reset.scss */
+body, button, input, select, textarea { font: 12px/1.5 tahoma, arial, \5b8b\4f53; }
+
+/* line 1, ../sass/common/reset.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+/* line 1, ../sass/common/reset.scss */
+address, cite, dfn, em, var { font-style: normal; }
+
+/* line 1, ../sass/common/reset.scss */
+code, kbd, pre, samp { font-family: courier new,courier,monospace; }
+
+/* line 1, ../sass/common/reset.scss */
+small { font-size: 12px; }
+
+/* line 1, ../sass/common/reset.scss */
+ul, ol { list-style: none; }
+
+/* line 1, ../sass/common/reset.scss */
+a { text-decoration: none; }
+
+/* line 1, ../sass/common/reset.scss */
+a:hover { text-decoration: underline; }
+
+/* line 1, ../sass/common/reset.scss */
+sup { vertical-align: text-top; }
+
+/* line 1, ../sass/common/reset.scss */
+sub { vertical-align: text-bottom; }
+
+/* line 1, ../sass/common/reset.scss */
+legend { color: #000; }
+
+/* line 1, ../sass/common/reset.scss */
+fieldset, img { border: 0; }
+
+/* line 1, ../sass/common/reset.scss */
+button, input, select, textarea { font-size: 100%; }
+
+/* line 1, ../sass/common/reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Global */
+/* line 1, ../sass/common/global.scss */
+body { background-image: url(../image/main_bg.jpg); }
+
+/* Layout. */
+/* header */
+/* line 2, ../sass/common/header.scss */
+#header { width: 100%; height: 280px; text-align: center; margin: auto; overflow: hidden; }
+/* line 10, ../sass/common/header.scss */
+#header .banner { height: 274px; width: 960px; margin: auto; background: url(../image/header.png) -360px 0 no-repeat; position: relative; top: -202px; }
+/* line 19, ../sass/common/header.scss */
+#header .decorate { width: 100%; height: 201px; background: #e53c21; }
+/* line 25, ../sass/common/header.scss */
+#header .banner-left { height: 274px; width: 369px; top: 0; left: -369px; /*margin: auto;*/ background: url(../image/header_left.png) right 0 no-repeat; position: absolute; }
+/* line 36, ../sass/common/header.scss */
+#header .banner-right { height: 274px; width: 546px; top: 0; right: -546px; background: url(../image/header_right.png) left 0 no-repeat; position: absolute; }
+
+/* footer */
+/* line 4, ../sass/common/copyright.scss */
+.site-info { overflow: hidden; *zoom: 1; clear: both; padding-top: 40px; }
+/* line 10, ../sass/common/copyright.scss */
+.site-info .copyright p { margin: 0; color: #e1e37a; font-size: 12px; line-height: 16px; }
+
+/* line 4, ../sass/common/footer.scss */
+#footer { width: 100%; min-width: 960px; text-align: center; height: 105px; background-color: #791200; overflow: hidden; }
+/* line 12, ../sass/common/footer.scss */
+#footer .bg { height: 105px; width: 960px; margin: auto; background: url(../image/footer_common_bg.jpg) left top no-repeat; }
+
+/* content */
+/* line 2, ../sass/common/content.scss */
+#content { width: 100%; min-width: 960px; overflow: hidden; }
+/* line 8, ../sass/common/content.scss */
+#content .content-wrap { margin: auto; padding-bottom: 61px; width: 960px; }
+
+/* line 4, ../sass/common/content_layout.scss */
+#content .side { float: left; width: 158px; }
+/* line 8, ../sass/common/content_layout.scss */
+#content .side .menu .item { margin-bottom: 15px; }
+/* line 14, ../sass/common/content_layout.scss */
+#content .main { width: 720px; margin-left: 158px; padding-left: 47px; }
+
+/* Components. */
+/* line 1, ../sass/common/login_welcome.scss */
+.login-welcome { font-size: 14px; color: #991D1D; margin-bottom: 20px; border-bottom: 1px #991D1D dotted; padding-bottom: 5px; text-align: right; }
+/* line 8, ../sass/common/login_welcome.scss */
+.login-welcome .user-name { margin: 0 5px 0 0; font-weight: bold; }
+
+/* 块级内容的装饰 */
+/* line 2, ../sass/common/block-decoration.scss */
+.block-decoration { background: url(../image/block-decoration-top.png) no-repeat top left; margin: 10px; }
+
+/* line 7, ../sass/common/block-decoration.scss */
+.block-decoration-wrap { background: url(../image/block-decoration-bottom.png) no-repeat bottom right; padding: 30px 30px 30px 30px; }
+
+/* 左侧菜单按钮 */
+/* line 6, ../sass/common/menu_button.scss */
+.menu-button, button.menu-button, input[type="reset"].menu-button, input[type="submit"].menu-button, input[type="button"].menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; font-size: 16px; /*box-shadow: 1px 1px 1px red;*/ }
+
+/* line 20, ../sass/common/menu_button.scss */
+.menu-button:hover, .menu-button-hover { background: url(../image/menu-button-hover.png) no-repeat top left; }
+
+/* line 28, ../sass/common/menu_button.scss */
+.form-button, button.form-button, input[type="reset"].form-button input[type="submit"].form-button, input[type="button"].form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
+
+/* 一般的按钮 */
+/* line 2, ../sass/common/action_button.scss */
+.action-button, input.action-button, button.action-button { background: url(../image/action-button-bg.jpg) top left; height: 26px; width: 84px; text-align: center; color: white; line-height: 26px; display: inline-block; /*padding: 0 10px 0 10px;*/ border: 2px solid white; cursor: pointer; }
+
+/* line 15, ../sass/common/action_button.scss */
+input.action-button, button.action-button { height: 30px; }
+
+/* 页面中的主要内容的容器 */
+/* line 2, ../sass/common/main_block.scss */
+.main-block { background: white; padding: 5px; }
+
+/* line 8, ../sass/common/main_block.scss */
+.main-block-wrap { border: 1px solid #eacaca; position: relative; padding: 60px 20px 60px 20px; }
+
+/* 标题 */
+/* line 15, ../sass/common/main_block.scss */
+.main-block .title { width: 162px; height: 35px; background: url(../image/main-block-title-bg.png) no-repeat top left; position: absolute; top: 8px; left: -9px; text-align: center; line-height: 28px; color: white; }
+
+/* 右上角的三角装饰 */
+/* line 28, ../sass/common/main_block.scss */
+.main-block .decorator-top { width: 45px; height: 45px; background: url(../image/main-block-decorator-top.png) no-repeat top left; position: absolute; top: -3px; right: -3px; }
+
+/* 左下角的三角装饰 */
+/* line 38, ../sass/common/main_block.scss */
+.main-block .decorator-bottom { width: 45px; height: 45px; background: url(../image/main-block-decorator-bottom.png) no-repeat top left; position: absolute; bottom: -3px; left: -3px; }
+
+/* 翻页按钮 */
+/* line 48, ../sass/common/main_block.scss */
+.main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
+
+/* line 56, ../sass/common/main_block.scss */
+.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; }
+
+/* line 68, ../sass/common/main_block.scss */
+.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
+
+/* line 80, ../sass/common/main_block.scss */
+.main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
+/* line 88, ../sass/common/main_block.scss */
+.main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
+/* line 93, ../sass/common/main_block.scss */
+.main-block .finish-count .count { float: right; margin-left: 10px; }
+
+/* 表单 */
+/* line 7, ../sass/common/form.scss */
+.form-label-like, .form-label-like-long, .control-group .control-label { text-align: right; width: 109px; height: 30px; padding-right: 20px; text-align: center; line-height: 30px; color: #aa002a; display: block; background: url(../image/form_label_bg.png); }
+
+/* line 19, ../sass/common/form.scss */
+.form-label-like-long { background: url(../image/form_long_label_bg.png); width: 166px; }
+
+/* line 25, ../sass/common/form.scss */
+.form-input-like, .form-input-like-long, .form-input-like-short, .control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { margin-top: 1px; height: 26px; width: 170px; border: #cf999e 1px solid; color: #aa002a; font-weight: bold; background-color: white; }
+
+/* line 35, ../sass/common/form.scss */
+.form-input-like-long { width: 200px; }
+
+/* line 40, ../sass/common/form.scss */
+.form-input-like-short { width: 82px; }
+
+/* line 45, ../sass/common/form.scss */
+.form-like { overflow: hidden; *zoom: 1; }
+/* line 47, ../sass/common/form.scss */
+.form-like .form-label-like, .form-like .form-label-like-long, .form-like .control-group .control-label, .control-group .form-like .control-label, .form-like .form-label-like-long, .form-like .form-label-like-short { float: left; margin-right: 30px; clear: left; }
+/* line 52, ../sass/common/form.scss */
+.form-like .form-input-like, .form-like .form-input-like-long, .form-like .form-input-like-short, .form-like .control-group .controls input, .control-group .controls .form-like input, .form-like .control-group .controls select, .control-group .controls .form-like select, .form-like .control-group .controls .verify-code-img, .control-group .controls .form-like .verify-code-img, .form-like .control-group .controls .info-block, .control-group .controls .form-like .info-block, .form-like .form-input-like-long, .form-like .form-input-like-short { float: left; line-height: 26px; text-align: center; }
+/* line 58, ../sass/common/form.scss */
+.form-like .form-input-list { float: left; padding-left: 1px; }
+/* line 61, ../sass/common/form.scss */
+.form-like .form-input-list .form-input-like, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short, .form-like .form-input-list .control-group .controls input, .control-group .controls .form-like .form-input-list input, .form-like .form-input-list .control-group .controls select, .control-group .controls .form-like .form-input-list select, .form-like .form-input-list .control-group .controls .verify-code-img, .control-group .controls .form-like .form-input-list .verify-code-img, .form-like .form-input-list .control-group .controls .info-block, .control-group .controls .form-like .form-input-list .info-block, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short { margin-left: -1px; }
+
+/* line 67, ../sass/common/form.scss */
+.control-group { overflow: hidden; *zoom: 1; margin-bottom: 2px; }
+/* line 74, ../sass/common/form.scss */
+.control-group .control-label { margin-right: 30px; float: left; }
+/* line 80, ../sass/common/form.scss */
+.control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
+/* line 88, ../sass/common/form.scss */
+.control-group .control-long-label { background: url(../image/form_long_label_bg.png); width: 166px; }
+/* line 96, ../sass/common/form.scss */
+.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { height: 28px; }
+/* line 101, ../sass/common/form.scss */
+.control-group .controls .verify-code-img { height: 26px; }
+/* line 105, ../sass/common/form.scss */
+.control-group .controls .short { width: 82px; }
+/* line 109, ../sass/common/form.scss */
+.control-group .controls .long { width: 200px; }
+
+/* line 115, ../sass/common/form.scss */
+.action-group { margin-top: 20px; }
+/* line 117, ../sass/common/form.scss */
+.action-group .form-button { margin-right: 20px; }
+
+/* 表格 */
+/* line 2, ../sass/common/info_table.scss */
+.info-table { background: white; border-collapse: collapse; color: #a50005; font-size: 16px; border: 1px solid #a50005; }
+/* line 10, ../sass/common/info_table.scss */
+.info-table th, .info-table td { border: 1px solid #a50005; padding: 0 10px; text-align: center; }
+/* line 16, ../sass/common/info_table.scss */
+.info-table .colord { background-color: #a50005; color: white; }
+
+/* line 22, ../sass/common/info_table.scss */
+.red-table { background: white; border-collapse: collapse; color: #ee0000; font-size: 16px; border: 1px solid #ee0000; border-top-width: 4px; }
+/* line 31, ../sass/common/info_table.scss */
+.red-table th, .red-table td { border: 1px solid #ee0000; padding: 0 10px; text-align: center; vertical-align: middle; }
+/* line 37, ../sass/common/info_table.scss */
+.red-table th a, .red-table td a { color: #aa002a; }
+/* line 42, ../sass/common/info_table.scss */
+.red-table .colord { background-color: #ee0000; color: white; }
+/* line 46, ../sass/common/info_table.scss */
+.red-table .colord a { color: white; }
+
+/* 面包屑 */
+/* line 2, ../sass/common/bread_crumbs.scss */
+.bread-crumbs { height: 30px; }
+/* line 5, ../sass/common/bread_crumbs.scss */
+.bread-crumbs .tag { float: left; }
+/* line 9, ../sass/common/bread_crumbs.scss */
+.bread-crumbs .pos { float: left; font-size: 16px; margin-left: 10px; line-height: 28px; font-weight: bold; }
+
+/* 菜单右侧border*/
+/* line 2, ../sass/common/decorade_border.scss */
+.decorade-border { background-image: url(../image/side_border.png); background-position: top right; background-repeat: repeat-y; }
+
+/* line 8, ../sass/common/decorade_border.scss */
+.left-border { background-position: top left; }
+
+/* line 11, ../sass/common/decorade_border.scss */
+.right-border { background-position: top right; }
+
+/* icon */
+/* line 2, ../sass/common/icon.scss */
+i.icon { width: 15px; height: 15px; display: inline-block; overflow: hidden; background-repeat: no-repeat; margin-left: 10px; }
+
+/* line 11, ../sass/common/icon.scss */
+.icon-pass { background-image: url(../image/icon-pass.png); }
+
+/* line 15, ../sass/common/icon.scss */
+.icon-error { background-image: url(../image/icon-error.png); }
+
+/* 评分进度 */
+/* line 2, ../sass/common/process_bar.scss */
+.process-bar { height: 28px; }
+/* line 6, ../sass/common/process_bar.scss */
+.process-bar .item { width: 131px; height: 28px; line-height: 28px; margin-left: 9px; background: url(../image/process_active_bg.png) no-repeat top left; float: left; color: white; text-align: center; font-size: 16px; }
+/* line 18, ../sass/common/process_bar.scss */
+.process-bar .finished { background: url(../image/process_unactive_bg.png) no-repeat top left; }
+
+/* Tag */
+/* line 2, ../sass/common/tag.scss */
+.tag { width: 79px; height: 28px; background-image: url(../image/tag.png); color: white; text-align: center; font-size: 14px; line-height: 28px; }
+
+/* 评分表单 */
+/* line 2, ../sass/common/score_form.scss */
+.score-form { background-color: white; }
+/* line 5, ../sass/common/score_form.scss */
+.score-form .score-form-block .block-title { margin-bottom: 25px; }
+/* line 8, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-list { margin-left: 20px; }
+/* line 12, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options { height: 25px; margin-left: 15px; margin-bottom: 20px; }
+/* line 16, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options label { width: 140px; float: left; height: 25px; display: block; line-height: 25px; text-align: left; }
+/* line 24, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .options label input { margin-right: 5px; }
+/* line 31, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea { margin-left: 20px; }
+/* line 33, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc { height: 20px; }
+/* line 35, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .tip { float: left; }
+/* line 38, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .count { float: right; }
+/* line 42, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
+/* line 53, ../sass/common/score_form.scss */
+.score-form .error { color: red; }
+
+/* line 3, ../sass/score.scss */
 .process-bar { margin-bottom: 38px; }

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>评分页面</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score.css" media="all">
 </head>
 <body>

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>学校组织部查看某个学院某个党支部的评分情况，并导出报表</title>
-    <?php include "../mods/assets.common.php"; ?>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score_branch.css" media="all">
 </head>
 <body>

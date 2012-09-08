@@ -2,9 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <?php include "../mods/assets.common.php"; ?>
         <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
-
         <style>
             #common-mods {
                 margin-left: 50px;

@@ -4,12 +4,7 @@
  * @author Neekey <ni184775761@gmail.com>
  * @date 2012.08
  */
-require.config({
-    baseUrl: 'assets/javascript/'
-});
-
-(function () {
-
+seajs.use([ 'jquery', 'lib/slides.jquery' ], function() {
     'use strict';
 
     $(document).ready(function () {
@@ -17,7 +12,7 @@ require.config({
         // 初始化滚动组件
         $('.affairs').slides({
             preload: true,
-            preloadImage: 'assets/image/loading.gif',
+            preloadImage: '../assets/image/loading.gif',
             next: 'J_SwitchRight',
             prev: 'J_SwitchLeft',
             container: 'J_SwitchList',
@@ -28,4 +23,4 @@ require.config({
             play: 5000
         });
     });
-})();
+});
