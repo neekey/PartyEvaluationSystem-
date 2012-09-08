@@ -2,8 +2,10 @@
  * 消息提示
  */
 .tip {
-  display: block;
-  background: #ee9a88;
-  padding: 5px;
+  $darkRed: #cd0609;
+  $lightRed: #e8907d;
+  //display: inline-block;
+  background: $lightRed;
+  padding: 5px 10px 5px 10px;
   color: white;
 }

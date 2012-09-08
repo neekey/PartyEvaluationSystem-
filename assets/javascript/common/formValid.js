@@ -3,7 +3,6 @@
  * @author neekey <ni184775761@gmail.com>
  */
 define(function(require, exports, module) {
-    var $ = require('jquery' );
 
     /**
      * fromValid 组建构造函数
@@ -43,7 +42,7 @@ define(function(require, exports, module) {
                 if( $( el ).attr( 'type' ) == 'submit' ){
                     $( el ).bind( 'click', function( ev ){
                         if( !that.check() ){
-                            ev.halt();
+                            ev.preventDefault();
                             return false;
                         }
                     });
@@ -51,13 +50,13 @@ define(function(require, exports, module) {
 
                 // 添加change 事件
                 $( el ).bind( 'change', function(){
-                    that.check_field( this[ 0 ] );
+                    that.check_field( this );
                 });
                 $( el ).bind( 'blur', function(){
-                    that.check_field( this[ 0 ] );
+                    that.check_field( this );
                 });
                 $( el ).bind( 'keyup', function(){
-                    that.check_field( this[ 0 ] );
+                    that.check_field( this );
                 });
 
             }
@@ -94,8 +93,13 @@ define(function(require, exports, module) {
             match: {
                 msg: "两次输入不匹配!",
                 test: function(obj){
-                    var target = $(obj).attr('match');
-                    return !obj.value || (obj.value === $('#' + target).val());
+                    var target = $(obj).attr('data-match');
+                    if( !obj.value ){
+                        return undefined;
+                    }
+                    else {
+                        return (obj.value === $(target).val());
+                    }
                 }
             },
             phone: {
@@ -168,11 +172,15 @@ define(function(require, exports, module) {
                 reResult = re.exec( elem.className );
                 if( reResult && reResult[ 1 ] ){
                     ifChecked = true;
-                    ruleResult = true;
-                    if( !this.rules[ j ].test( elem, reResult[ 1 ] )){
+                    ruleResult = this.rules[ j ].test( elem, reResult[ 1 ] );
+                    if( ruleResult === false ){
                         check_result = false;
-                        ruleResult = false;
                     }
+
+                    if( ruleResult === undefined ){
+                        continue;
+                    }
+
                     this.callback( ruleResult, elem, reResult[ 1 ], this.rules[ j ][ 'msg' ] );
                     reResult = null;
                 }

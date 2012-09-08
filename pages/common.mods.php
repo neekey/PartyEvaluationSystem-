@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <title>党组织学习型网站 - DPL</title>
         <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
-        <link rel="stylesheet" type="text/css" href="../assets/stylesheet/common.css" media="all">
+        <link rel="stylesheet" type="text/css" href="../assets/stylesheet/common_mods.css" media="all">
+
         <style>
             #common-mods {
                 margin-left: 50px;
@@ -29,7 +30,7 @@
             <h3 class="title">Block-Decoration</h3>
             <div class="mod-wrap">
                 <div class="tip">这是一条消息</div>
-                <div class="tip tip-error">这是一条错误消息</div>
+<!--                <div class="tip tip-error">这是一条错误消息</div>-->
             </div>
         </div>
         <div class="mod-block">
