@@ -2,7 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>党组织学习型网站 - DPL</title>
         <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
+        <link rel="stylesheet" type="text/css" href="../assets/stylesheet/common.css" media="all">
         <style>
             #common-mods {
                 margin-left: 50px;
@@ -21,6 +23,13 @@
                         这是块级内容装饰样式
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="mod-block">
+            <h3 class="title">Block-Decoration</h3>
+            <div class="mod-wrap">
+                <div class="tip">这是一条消息</div>
+                <div class="tip tip-error">这是一条错误消息</div>
             </div>
         </div>
         <div class="mod-block">
@@ -279,8 +288,6 @@
                             <textarea placeholder="请填入支部寄语" name=""></textarea>
                         </div>
                     </div>
-
-
                 </form>
             </div>
         </div>

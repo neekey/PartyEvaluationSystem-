@@ -5,7 +5,7 @@
     <title>修改密码</title>
     <link rel="stylesheet" type="text/css" href="../assets/stylesheet/score.css" media="all">
     <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/new_account.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/change_password.css" media="all">
 </head>
 <body>
 <?php include "../mods/header.php"; ?>
