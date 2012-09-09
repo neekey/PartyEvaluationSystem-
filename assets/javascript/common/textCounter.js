@@ -9,8 +9,9 @@ define(function( require, exports, module){
         var max = parseInt( maxCount.text() );
         var preNum = 0;
 
-        textarea.bind( 'change keyup', function(){
+        textarea.bind( 'change keyup', check );
 
+        function check(){
             var num = textarea.val().length;
             curCount.text( num );
             if( preNum <= max && num > max ){
@@ -20,6 +21,14 @@ define(function( require, exports, module){
                 retrieveCbCb()
             }
             preNum = num;
-        });
+
+            return {
+                result: num <= max,
+                actual: num,
+                max: max
+            };
+        }
+
+        return check;
     };
 });

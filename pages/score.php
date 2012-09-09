@@ -21,9 +21,9 @@
             </ul>
         </div>
         <div class="main decorade-border left-border">
-            <ul class="process-bar">
-                <li class="item finished">愿景体系</li>
-                <li class="item finished">学习系统</li>
+            <ul class="process-bar J_ProcessBar">
+                <li class="item">愿景体系</li>
+                <li class="item">学习系统</li>
                 <li class="item">知识系统</li>
                 <li class="item">人员系统</li>
                 <li class="item">保障系统</li>
@@ -34,42 +34,44 @@
                     <div class="decorator-top"></div>
                     <div class="decorator-bottom"></div>
                     <div class="page-button">
-                        <div class="prev">上一页</div>
-                        <div class="next">下一页</div>
+                        <div class="prev J_Prev" style="display: none">上一页</div>
+                        <div class="next J_Next">下一页</div>
                     </div>
                     <div class="finish-count">
-                        <p class="count"><span class="current">4</span>/<span class="max">6</span></p>
-                        <p class="tip">尚有题目未完成!</p>
+<!--                        <p class="count"><span class="current">4</span>/<span class="max">6</span></p>-->
+                        <p class="tip J_Tip" style="display: none">尚有题目未完成!</p>
                     </div>
-                    <form class="score-form">
+                    <form class="score-form J_ScoreForm">
+                        <?php for( $i = 0; $i < 5; $i++ ){ ?>
+                        <div class="score-form-wrap J_ScoreFormWrap" <?php if( $i > 0 ){ ?> style="display: none" <?php } ?>>
                         <div class="score-form-block">
                             <!--标题-->
                             <h3 class="block-title">一、知识的内容(<span>10分</span>)</h3>
-                            <ul class="question-list">
+                            <ul class="question-list J_QuestionList">
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+1)?>" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+1)?>" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+1)?>" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+1)?>" value="good">差(0)</label>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="desc error">
+                                    <div class="desc">
                                         <span class="question-index">2.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+2)?>" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+2)?>" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+2)?>" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+2)?>" value="good">差(0)</label>
                                     </div>
                                 </li>
                             </ul>
@@ -77,31 +79,31 @@
                         <div class="score-form-block">
                             <!--标题-->
                             <h3 class="block-title">二、知识的内容(<span>10分</span>)</h3>
-                            <ul class="question-list">
+                            <ul class="question-list J_QuestionList">
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+3)?>" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+3)?>" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+3)?>" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+3)?>" value="good">差(0)</label>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="desc error">
+                                    <div class="desc">
                                         <span class="question-index">2.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+4)?>" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+4)?>" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+4)?>" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option-<?=($i+4)?>" value="good">差(0)</label>
                                     </div>
                                 </li>
                             </ul>
@@ -117,6 +119,8 @@
                                 <textarea class="J_GiftText" placeholder="请填入支部寄语" name=""></textarea>
                             </div>
                         </div>
+                        </div>
+                        <?php } ?>
                     </form>
                 </div>
             </div>

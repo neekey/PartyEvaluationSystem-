@@ -66,7 +66,7 @@
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
@@ -79,7 +79,7 @@
                                 <li>
                                     <div class="desc error">
                                         <span class="question-index">2.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
@@ -98,7 +98,7 @@
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
@@ -111,7 +111,7 @@
                                 <li>
                                     <div class="desc error">
                                         <span class="question-index">2.</span>
-                                        <span class="desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
+                                        <span class="question-desc">党员重点学习有中国特色的社会主义理论,能结合自身工作深刻理会其内涵</span>
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
