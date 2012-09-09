@@ -26,5 +26,11 @@
 
   .actions {
     text-align: center;
+    .error-tip {
+      color: red;
+      margin-left: 10px;
+      font-weight: bold;
+      display: none;
+    }
   }
 }

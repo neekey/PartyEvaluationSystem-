@@ -467,3 +467,5 @@ i.icon { width: 15px; height: 15px; display: inline-block; overflow: hidden; bac
 
 /* line 27, ../sass/score_message.scss */
 .score-form .actions { text-align: center; }
+/* line 29, ../sass/score_message.scss */
+.score-form .actions .error-tip { color: red; margin-left: 10px; font-weight: bold; display: none; }

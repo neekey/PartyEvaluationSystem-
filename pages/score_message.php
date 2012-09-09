@@ -62,7 +62,7 @@
                         <div class="score-form-block">
                             <!--标题-->
                             <h3 class="block-title">一、知识的内容(<span>10分</span>)</h3>
-                            <ul class="question-list">
+                            <ul class="question-list J_QuestionList">
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
@@ -70,10 +70,10 @@
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option1" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option1" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option1" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option1" value="good">差(0)</label>
                                     </div>
                                 </li>
                                 <li>
@@ -83,10 +83,10 @@
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option2" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option2" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option2" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option2" value="good">差(0)</label>
                                     </div>
                                 </li>
                             </ul>
@@ -94,7 +94,7 @@
                         <div class="score-form-block">
                             <!--标题-->
                             <h3 class="block-title">二、知识的内容(<span>10分</span>)</h3>
-                            <ul class="question-list">
+                            <ul class="question-list J_QuestionList">
                                 <li>
                                     <div class="desc">
                                         <span class="question-index">1.</span>
@@ -102,10 +102,10 @@
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option3" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option3" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option3" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option3" value="good">差(0)</label>
                                     </div>
                                 </li>
                                 <li>
@@ -115,10 +115,10 @@
                                         <span class="score">1.0分</span>
                                     </div>
                                     <div class="options">
-                                        <label class="option-text"><input type="radio" name="option" value="good">优秀(1.0)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">良好(0.66)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">中等(0.33)</label>
-                                        <label class="option-text"><input type="radio" name="option" value="good">差(0)</label>
+                                        <label class="option-text"><input type="radio" name="option4" value="good">优秀(1.0)</label>
+                                        <label class="option-text"><input type="radio" name="option4" value="good">良好(0.66)</label>
+                                        <label class="option-text"><input type="radio" name="option4" value="good">中等(0.33)</label>
+                                        <label class="option-text"><input type="radio" name="option4" value="good">差(0)</label>
                                     </div>
                                 </li>
                             </ul>
@@ -135,8 +135,8 @@
                             </div>
                         </div>
                         <div class="actions">
-                            <input type="submit" class="action-button" value="保存">
-                        </div>
+                            <input type="submit" class="action-button J_SaveBtn" value="保存"><span class="error-tip J_ErrorTip">尚有题目未完成!</span>
+
                     </form>
                 </div>
             </div>
