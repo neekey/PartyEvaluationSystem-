@@ -9,6 +9,12 @@
       margin-left: 20px;
       .desc {
       }
+      .desc {
+        .error-tip {
+          float: right;
+          font-weight: bold;
+        }
+      }
       .options {
         height: 25px;
         margin-left: 15px;

@@ -328,16 +328,16 @@ input.action-button, button.action-button { height: 30px; }
 .main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
 
 /* line 56, ../sass/common/main_block.scss */
-.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; }
+.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 68, ../sass/common/main_block.scss */
-.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
+/* line 69, ../sass/common/main_block.scss */
+.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 80, ../sass/common/main_block.scss */
+/* line 82, ../sass/common/main_block.scss */
 .main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
-/* line 88, ../sass/common/main_block.scss */
+/* line 90, ../sass/common/main_block.scss */
 .main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
-/* line 93, ../sass/common/main_block.scss */
+/* line 95, ../sass/common/main_block.scss */
 .main-block .finish-count .count { float: right; margin-left: 10px; }
 
 /* 表单 */
@@ -435,25 +435,27 @@ i.icon { width: 15px; height: 15px; display: inline-block; overflow: hidden; bac
 .score-form .score-form-block .block-title { margin-bottom: 25px; }
 /* line 8, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-list { margin-left: 20px; }
-/* line 12, ../sass/common/score_form.scss */
+/* line 13, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-list .desc .error-tip { float: right; font-weight: bold; }
+/* line 18, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-list .options { height: 25px; margin-left: 15px; margin-bottom: 20px; }
-/* line 16, ../sass/common/score_form.scss */
+/* line 22, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-list .options label { width: 140px; float: left; height: 25px; display: block; line-height: 25px; text-align: left; }
-/* line 24, ../sass/common/score_form.scss */
+/* line 30, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-list .options label input { margin-right: 5px; }
-/* line 31, ../sass/common/score_form.scss */
+/* line 37, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea { margin-left: 20px; }
-/* line 33, ../sass/common/score_form.scss */
+/* line 39, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea .desc { height: 20px; }
-/* line 35, ../sass/common/score_form.scss */
-.score-form .score-form-block .question-textarea .desc .tip { float: left; }
-/* line 38, ../sass/common/score_form.scss */
-.score-form .score-form-block .question-textarea .desc .count { float: right; }
 /* line 41, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .tip { float: left; }
+/* line 44, ../sass/common/score_form.scss */
+.score-form .score-form-block .question-textarea .desc .count { float: right; }
+/* line 47, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea .desc .count-overflow { color: red; font-weight: bold; }
-/* line 46, ../sass/common/score_form.scss */
+/* line 52, ../sass/common/score_form.scss */
 .score-form .score-form-block .question-textarea textarea { height: 128px; border: #efd3d7 1px solid; margin-top: 5px; width: 100%; margin-bottom: 10px; padding: 5px; }
-/* line 57, ../sass/common/score_form.scss */
+/* line 63, ../sass/common/score_form.scss */
 .score-form .error { color: red; }
 
 /* line 12, ../sass/score_message.scss */

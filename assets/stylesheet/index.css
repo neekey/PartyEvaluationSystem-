@@ -323,16 +323,16 @@ body { background-image: url(../image/main_bg.jpg); }
 .main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
 
 /* line 56, ../sass/common/main_block.scss */
-.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; }
+.main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 68, ../sass/common/main_block.scss */
-.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; }
+/* line 69, ../sass/common/main_block.scss */
+.main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 80, ../sass/common/main_block.scss */
+/* line 82, ../sass/common/main_block.scss */
 .main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
-/* line 88, ../sass/common/main_block.scss */
+/* line 90, ../sass/common/main_block.scss */
 .main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
-/* line 93, ../sass/common/main_block.scss */
+/* line 95, ../sass/common/main_block.scss */
 .main-block .finish-count .count { float: right; margin-left: 10px; }
 
 /* 表单 */
