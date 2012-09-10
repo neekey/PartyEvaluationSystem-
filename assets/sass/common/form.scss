@@ -59,6 +59,7 @@ $formTextColor: #aa002a;
   .form-input-list {
     float: left;
     padding-left: 1px;
+    _padding-left: 2px;
     .form-input-like, .form-input-like-long, .form-input-like-short {
       margin-left: -1px;
     }
@@ -94,9 +95,19 @@ $formTextColor: #aa002a;
 
   .controls {
 
+    *margin-top: -1px;
+    _margin-top: -2px;
+
     input, select, .verify-code-img, .info-block {
       @extend .form-input-like;
       height: 28px;
+      *height: 23px;
+      _height: 26px;
+    }
+
+    /* IE6-7 无法设置高度，因此让其居中显示 */
+    select {
+      *margin-top: 6px;
     }
 
     .verify-code-img {

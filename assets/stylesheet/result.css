@@ -295,14 +295,14 @@ body { background-image: url(../image/main_bg.jpg); }
 .block-decoration-wrap { background: url(../image/block-decoration-bottom.png) no-repeat bottom right; padding: 30px 30px 30px 30px; }
 
 /* 左侧菜单按钮 */
-/* line 6, ../sass/common/menu_button.scss */
-.menu-button, button.menu-button, input[type="reset"].menu-button, input[type="submit"].menu-button, input[type="button"].menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; font-size: 16px; /*box-shadow: 1px 1px 1px red;*/ }
+/* line 3, ../sass/common/menu_button.scss */
+.menu-button, button.menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; font-size: 16px; /*box-shadow: 1px 1px 1px red;*/ }
 
-/* line 20, ../sass/common/menu_button.scss */
+/* line 17, ../sass/common/menu_button.scss */
 .menu-button:hover, .menu-button-hover { background: url(../image/menu-button-hover.png) no-repeat top left; }
 
-/* line 28, ../sass/common/menu_button.scss */
-.form-button, button.form-button, input[type="reset"].form-button input[type="submit"].form-button, input[type="button"].form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
+/* line 22, ../sass/common/menu_button.scss */
+.form-button, button.form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
 
 /* 菜单右侧border*/
 /* line 2, ../sass/common/decorade_border.scss */

@@ -288,14 +288,14 @@ body { background-image: url(../image/main_bg.jpg); }
 .login-welcome .user-name { margin: 0 5px 0 0; font-weight: bold; }
 
 /* 左侧菜单按钮 */
-/* line 6, ../sass/common/menu_button.scss */
-.menu-button, button.menu-button, input[type="reset"].menu-button, input[type="submit"].menu-button, input[type="button"].menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; font-size: 16px; /*box-shadow: 1px 1px 1px red;*/ }
+/* line 3, ../sass/common/menu_button.scss */
+.menu-button, button.menu-button { width: 128px; height: 28px; background: url(../image/menu-button.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; font-size: 16px; /*box-shadow: 1px 1px 1px red;*/ }
 
-/* line 20, ../sass/common/menu_button.scss */
+/* line 17, ../sass/common/menu_button.scss */
 .menu-button:hover, .menu-button-hover { background: url(../image/menu-button-hover.png) no-repeat top left; }
 
-/* line 28, ../sass/common/menu_button.scss */
-.form-button, button.form-button, input[type="reset"].form-button input[type="submit"].form-button, input[type="button"].form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
+/* line 22, ../sass/common/menu_button.scss */
+.form-button, button.form-button { height: 28px; width: 105px; background: url(../image/form_button_bg.png) no-repeat top left; cursor: pointer; line-height: 28px; text-align: center; color: #991d1d; border: none; display: inline-block; }
 
 /* 一般的按钮 */
 /* line 2, ../sass/common/action_button.scss */
@@ -313,31 +313,31 @@ input.action-button, button.action-button { height: 30px; }
 
 /* 标题 */
 /* line 15, ../sass/common/main_block.scss */
-.main-block .title { width: 162px; height: 35px; background: url(../image/main-block-title-bg.png) no-repeat top left; position: absolute; top: 8px; left: -9px; text-align: center; line-height: 28px; color: white; }
+.main-block .title { width: 162px; height: 35px; background: url(../image/main-block-title-bg.png) no-repeat top left; position: absolute; top: 8px; left: -9px; _left: -29px; text-align: center; line-height: 28px; color: white; }
 
 /* 右上角的三角装饰 */
-/* line 28, ../sass/common/main_block.scss */
+/* line 29, ../sass/common/main_block.scss */
 .main-block .decorator-top { width: 45px; height: 45px; background: url(../image/main-block-decorator-top.png) no-repeat top left; position: absolute; top: -3px; right: -3px; }
 
 /* 左下角的三角装饰 */
-/* line 38, ../sass/common/main_block.scss */
+/* line 39, ../sass/common/main_block.scss */
 .main-block .decorator-bottom { width: 45px; height: 45px; background: url(../image/main-block-decorator-bottom.png) no-repeat top left; position: absolute; bottom: -3px; left: -3px; }
 
 /* 翻页按钮 */
-/* line 48, ../sass/common/main_block.scss */
+/* line 49, ../sass/common/main_block.scss */
 .main-block .page-button { height: 33px; position: absolute; width: 162px; bottom: 20px; right: -9px; }
 
-/* line 56, ../sass/common/main_block.scss */
+/* line 57, ../sass/common/main_block.scss */
 .main-block .page-button .prev { background: url(../image/page-prev.png); position: absolute; top: 0px; left: 0px; width: 92px; height: 26px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 69, ../sass/common/main_block.scss */
+/* line 70, ../sass/common/main_block.scss */
 .main-block .page-button .next { background: url(../image/page-next.png); position: absolute; top: 0px; right: 0px; width: 70px; height: 33px; color: white; text-align: center; line-height: 26px; cursor: pointer; }
 
-/* line 82, ../sass/common/main_block.scss */
+/* line 83, ../sass/common/main_block.scss */
 .main-block .finish-count { position: absolute; height: 25px; width: 200px; bottom: 25px; right: 170px; font-size: 14px; }
-/* line 90, ../sass/common/main_block.scss */
+/* line 91, ../sass/common/main_block.scss */
 .main-block .finish-count .tip { float: right; color: red; font-weight: bold; }
-/* line 95, ../sass/common/main_block.scss */
+/* line 96, ../sass/common/main_block.scss */
 .main-block .finish-count .count { float: right; margin-left: 10px; }
 
 /* 表单 */
@@ -363,30 +363,34 @@ input.action-button, button.action-button { height: 30px; }
 /* line 53, ../sass/common/form.scss */
 .form-like .form-input-like, .form-like .form-input-like-long, .form-like .form-input-like-short, .form-like .control-group .controls input, .control-group .controls .form-like input, .form-like .control-group .controls select, .control-group .controls .form-like select, .form-like .control-group .controls .verify-code-img, .control-group .controls .form-like .verify-code-img, .form-like .control-group .controls .info-block, .control-group .controls .form-like .info-block, .form-like .form-input-like-long, .form-like .form-input-like-short { float: left; line-height: 26px; text-align: center; }
 /* line 59, ../sass/common/form.scss */
-.form-like .form-input-list { float: left; padding-left: 1px; }
-/* line 62, ../sass/common/form.scss */
+.form-like .form-input-list { float: left; padding-left: 1px; _padding-left: 2px; }
+/* line 63, ../sass/common/form.scss */
 .form-like .form-input-list .form-input-like, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short, .form-like .form-input-list .control-group .controls input, .control-group .controls .form-like .form-input-list input, .form-like .form-input-list .control-group .controls select, .control-group .controls .form-like .form-input-list select, .form-like .form-input-list .control-group .controls .verify-code-img, .control-group .controls .form-like .form-input-list .verify-code-img, .form-like .form-input-list .control-group .controls .info-block, .control-group .controls .form-like .form-input-list .info-block, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short { margin-left: -1px; }
 
-/* line 68, ../sass/common/form.scss */
+/* line 69, ../sass/common/form.scss */
 .control-group { overflow: hidden; *zoom: 1; margin-bottom: 2px; }
-/* line 75, ../sass/common/form.scss */
+/* line 76, ../sass/common/form.scss */
 .control-group .control-label { margin-right: 30px; float: left; }
-/* line 81, ../sass/common/form.scss */
+/* line 82, ../sass/common/form.scss */
 .control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
-/* line 89, ../sass/common/form.scss */
+/* line 90, ../sass/common/form.scss */
 .control-group .control-long-label { background: url(../image/form_long_label_bg.png); width: 166px; }
-/* line 97, ../sass/common/form.scss */
-.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { height: 28px; }
-/* line 102, ../sass/common/form.scss */
+/* line 96, ../sass/common/form.scss */
+.control-group .controls { *margin-top: -1px; _margin-top: -2px; /* IE6-7 无法设置高度，因此让其居中显示 */ }
+/* line 101, ../sass/common/form.scss */
+.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { height: 28px; *height: 23px; _height: 26px; }
+/* line 109, ../sass/common/form.scss */
+.control-group .controls select { *margin-top: 6px; }
+/* line 113, ../sass/common/form.scss */
 .control-group .controls .verify-code-img { height: 26px; }
-/* line 106, ../sass/common/form.scss */
+/* line 117, ../sass/common/form.scss */
 .control-group .controls .short { width: 82px; }
-/* line 110, ../sass/common/form.scss */
+/* line 121, ../sass/common/form.scss */
 .control-group .controls .long { width: 200px; }
 
-/* line 116, ../sass/common/form.scss */
+/* line 127, ../sass/common/form.scss */
 .action-group { margin-top: 20px; }
-/* line 118, ../sass/common/form.scss */
+/* line 129, ../sass/common/form.scss */
 .action-group .form-button { margin-right: 20px; }
 
 /* 表格 */

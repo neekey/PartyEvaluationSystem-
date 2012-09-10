@@ -1,9 +1,6 @@
 /* 左侧菜单按钮 */
 .menu-button,
-button.menu-button,
-input[type="reset"].menu-button,
-input[type="submit"].menu-button,
-input[type="button"].menu-button {
+button.menu-button {
   width: 128px;
   height: 28px;
   background: url(../image/menu-button.png) no-repeat top left;
@@ -22,10 +19,7 @@ input[type="button"].menu-button {
 }
 
 .form-button,
-button.form-button,
-input[type="reset"].form-button
-input[type="submit"].form-button,
-input[type="button"].form-button{
+button.form-button {
   height: 28px;
   width: 105px;
   background: url(../image/form_button_bg.png) no-repeat top left;
