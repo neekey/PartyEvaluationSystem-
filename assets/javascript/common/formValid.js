@@ -2,8 +2,8 @@
  * 表单验证
  * @author neekey <ni184775761@gmail.com>
  */
-define(function(require, exports, module) {
-    require( 'jquery' );
+define([ 'jquery' ], function(require, exports, module) {
+//    require( 'jquery' );
     /**
      * fromValid 组建构造函数
      * @param {String} hook

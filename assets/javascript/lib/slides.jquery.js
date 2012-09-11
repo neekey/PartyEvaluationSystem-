@@ -17,7 +17,10 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-(function($){
+define([ 'jquery' ], function( require, exports, module ){
+
+//    require( 'jquery' );
+
 	$.fn.slides = function( option ) {
 		// override defaults with specified option
 		option = $.extend( {}, $.fn.slides.option, option );
@@ -552,4 +555,4 @@
 			}
 		}));
 	};
-})(jQuery);
+});

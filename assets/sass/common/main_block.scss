@@ -9,6 +9,8 @@
   border: 1px solid #eacaca;
   position: relative;
   padding: 60px 20px 60px 20px;
+  /* IE6 否则会乱的... */
+  zoom: 1;
 }
 
 /* 标题 */
@@ -19,7 +21,7 @@
   position: absolute;
   top: 8px;
   left: -9px;
-  _left: -29px;
+  //_left: -29px;
   text-align: center;
   line-height: 28px;
   color: white;

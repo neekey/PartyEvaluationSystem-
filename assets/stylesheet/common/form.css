@@ -21,28 +21,32 @@
 /* line 53, ../../sass/common/form.scss */
 .form-like .form-input-like, .form-like .form-input-like-long, .form-like .form-input-like-short, .form-like .control-group .controls input, .control-group .controls .form-like input, .form-like .control-group .controls select, .control-group .controls .form-like select, .form-like .control-group .controls .verify-code-img, .control-group .controls .form-like .verify-code-img, .form-like .control-group .controls .info-block, .control-group .controls .form-like .info-block, .form-like .form-input-like-long, .form-like .form-input-like-short { float: left; line-height: 26px; text-align: center; }
 /* line 59, ../../sass/common/form.scss */
-.form-like .form-input-list { float: left; padding-left: 1px; }
-/* line 62, ../../sass/common/form.scss */
+.form-like .form-input-list { float: left; padding-left: 1px; _padding-left: 2px; }
+/* line 63, ../../sass/common/form.scss */
 .form-like .form-input-list .form-input-like, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short, .form-like .form-input-list .control-group .controls input, .control-group .controls .form-like .form-input-list input, .form-like .form-input-list .control-group .controls select, .control-group .controls .form-like .form-input-list select, .form-like .form-input-list .control-group .controls .verify-code-img, .control-group .controls .form-like .form-input-list .verify-code-img, .form-like .form-input-list .control-group .controls .info-block, .control-group .controls .form-like .form-input-list .info-block, .form-like .form-input-list .form-input-like-long, .form-like .form-input-list .form-input-like-short { margin-left: -1px; }
 
-/* line 68, ../../sass/common/form.scss */
+/* line 69, ../../sass/common/form.scss */
 .control-group { overflow: hidden; *zoom: 1; margin-bottom: 2px; }
-/* line 75, ../../sass/common/form.scss */
+/* line 76, ../../sass/common/form.scss */
 .control-group .control-label { margin-right: 30px; float: left; }
-/* line 81, ../../sass/common/form.scss */
+/* line 82, ../../sass/common/form.scss */
 .control-group .control-label .tip { display: block; font-size: small; color: #666; margin-top: 5px; }
-/* line 89, ../../sass/common/form.scss */
+/* line 90, ../../sass/common/form.scss */
 .control-group .control-long-label { background: url(../image/form_long_label_bg.png); width: 166px; }
-/* line 97, ../../sass/common/form.scss */
-.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { height: 28px; }
-/* line 102, ../../sass/common/form.scss */
+/* line 96, ../../sass/common/form.scss */
+.control-group .controls { *margin-top: -1px; _margin-top: -2px; /* IE6-7 无法设置高度，因此让其居中显示 */ }
+/* line 101, ../../sass/common/form.scss */
+.control-group .controls input, .control-group .controls select, .control-group .controls .verify-code-img, .control-group .controls .info-block { height: 28px; *height: 23px; _height: 26px; }
+/* line 109, ../../sass/common/form.scss */
+.control-group .controls select { *margin-top: 6px; }
+/* line 113, ../../sass/common/form.scss */
 .control-group .controls .verify-code-img { height: 26px; }
-/* line 106, ../../sass/common/form.scss */
+/* line 117, ../../sass/common/form.scss */
 .control-group .controls .short { width: 82px; }
-/* line 110, ../../sass/common/form.scss */
+/* line 121, ../../sass/common/form.scss */
 .control-group .controls .long { width: 200px; }
 
-/* line 116, ../../sass/common/form.scss */
+/* line 127, ../../sass/common/form.scss */
 .action-group { margin-top: 20px; }
-/* line 118, ../../sass/common/form.scss */
+/* line 129, ../../sass/common/form.scss */
 .action-group .form-button { margin-right: 20px; }

@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf8">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../assets/lib/css/formalize.css">
         <link rel="stylesheet" type="text/css" href="../assets/stylesheet/index.css">
         <script type="text/javascript" src="../assets/javascript/lib/seajs.js"></script>
         <?php include "../mods/seajs.config.php"; ?>
-        <script type="text/javascript" src="../assets/javascript/lib/jquery.js"></script>
+<!--        <script type="text/javascript" src="../assets/javascript/lib/jquery.js"></script>-->
         <script type="text/javascript" src="../assets/javascript/index.js"></script>
     </head>
     <body id="index">
@@ -41,7 +41,7 @@
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="verify-code">检验码</label>
-                                <div class="controls">
+                                <div class="controls verify-code">
                                     <input class="short required" id="verify-code" name="code" type="text" data-msg-required="检验码不能为空" placeholder="请输入文字" />
                                     <img src="http://placehold.it/82x26" class="verify-code-img short"/>
                                 </div>

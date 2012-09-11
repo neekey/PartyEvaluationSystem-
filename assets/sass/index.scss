@@ -46,6 +46,21 @@
       margin-right: 4px;
     }
   }
+
+  /* IE6 Fix */
+  .control-group {
+    .verify-code {
+      input {
+        _float: left;
+        _margin-left: 2px;
+        _margin-top: 3px;
+      }
+      .verify-code-img {
+        _margin-top: 3px;
+      }
+    }
+  }
+
 }
 
 .affairs {
