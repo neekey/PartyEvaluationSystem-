@@ -43,7 +43,7 @@
                                 <label class="control-label" for="verify-code">检验码</label>
                                 <div class="controls verify-code">
                                     <input class="short required" id="verify-code" name="code" type="text" data-msg-required="检验码不能为空" placeholder="请输入文字" />
-                                    <img src="http://placehold.it/82x26" class="verify-code-img short"/>
+                                    <img src="http://avital.mobi/82x26/000/fff&text=122" class="verify-code-img short"/>
                                 </div>
                             </div>
                             <div class="tip J_Tip"></div>
@@ -67,14 +67,14 @@
                     <div class="affairs-list J_SwitchList">
                         <div class="slide">
                             <div class="item">
-                                <p><img src="http://placehold.it/110x75" class="pic"></p>
+                                <p><img src="http://avital.mobi/110x75/000/fff&text=122" class="pic"></p>
                                 <div class="text">
                                     <p class="title">学校召开党委中心组扩大会议</p>
                                     <p class="desc">6月8日下午，学校党委学校党委学校党委学校党委学校党委学校党委学校党委学校党委<a href=#>【详情】</a></p>
                                 </div>
                             </div>
                             <div class="item">
-                                <p><img src="http://placehold.it/110x75" class="pic"></p>
+                                <p><img src="http://avital.mobi/110x75/000/fff&text=122" class="pic"></p>
                                 <div class="text">
                                     <p class="title">学校召开党委中心组扩大会议</p>
                                     <p class="desc">6月8日下午，学校党委学校党委学校党委学校党委学校党委学校党委学校党委学校党委<a href=#>【详情】</a></p>
@@ -83,14 +83,14 @@
                         </div>
                         <div class="slide">
                             <div class="item">
-                                <p><img src="http://placehold.it/110x75" class="pic"></p>
+                                <p><img src="http://avital.mobi/110x75/000/fff&text=122" class="pic"></p>
                                 <div class="text">
                                     <p class="title">学校召开党委中心组扩大会议</p>
                                     <p class="desc">6月8日下午，学校党委学校党委学校党委学校党委学校党委学校党委学校党委学校党委<a href=#>【详情】</a></p>
                                 </div>
                             </div>
                             <div class="item">
-                                <p><img src="http://placehold.it/110x75" class="pic"></p>
+                                <p><img src="http://avital.mobi/110x75/000/fff&text=122" class="pic"></p>
                                 <div class="text">
                                     <p class="title">学校召开党委中心组扩大会议</p>
                                     <p class="desc">6月8日下午，学校党委学校党委学校党委学校党委学校党委学校党委学校党委学校党委<a href=#>【详情】</a></p>

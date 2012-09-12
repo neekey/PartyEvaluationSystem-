@@ -67,6 +67,8 @@
   position: relative;
   font-size: 12px;
   height: 115px;
+  width: 960px;
+  overflow: hidden;
   .trigger {
     position: absolute;
     height: 42px;
@@ -88,6 +90,7 @@
     margin-left: 105px;
     margin-top: 0px;
     list-style: none;
+    width: 855px;
     .item {
       width: 375px;
       height: 85px;
