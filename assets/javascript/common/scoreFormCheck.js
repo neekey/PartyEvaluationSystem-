@@ -1,3 +1,9 @@
+/**
+ * 评分部分的题目检查
+ * @author neekey<ni184775761@gmail.com>
+ * @date 2012.09
+ */
+
 define(function( require, exports, module ){
 
     require( 'jquery' );
@@ -52,6 +58,7 @@ define(function( require, exports, module ){
             checks.push( check );
         });
 
+        // 返回一个方法，该方法将检查题目是否填写完毕
         return function(){
             var ifAllPass = true;
             var checkNum = checks.length;
@@ -67,8 +74,11 @@ define(function( require, exports, module ){
             }
 
             return {
+                // 是否都填写完毕
                 result: ifAllPass,
+                // 总的题目数量
                 total: checkNum,
+                // 已经完成的题目数量
                 pass: passed
             }
         }

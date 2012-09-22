@@ -9,9 +9,13 @@ seajs.use([ 'common/formCheck', 'lib/slides.jquery' ], function( FormCheck ) {
 
     $(document).ready(function () {
 
+        var formHook = '.J_LoginForm';
+        var tipHook = '.J_Tip';
+
         // 初始化滚动组件
         $('.affairs').slides({
             preload: true,
+            // 图片加载时显示的loading图案
             preloadImage: '../assets/image/loading.gif',
             next: 'J_SwitchRight',
             prev: 'J_SwitchLeft',
@@ -23,8 +27,7 @@ seajs.use([ 'common/formCheck', 'lib/slides.jquery' ], function( FormCheck ) {
             play: 5000
         });
 
-        var formHook = '.J_LoginForm';
-        var tipHook = '.J_Tip';
+        // 表单验证
         FormCheck( formHook, tipHook );
     });
 });
