@@ -1,54 +1,41 @@
-seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCounter, ScoreFormCheck ){
+/**
+ * 一般党员评分页面
+ * @author neekey <ni184775761@gmail.com>
+ * @date 2012.09
+ */
+seajs.use( [ 'common/scoreFormCheck' ], function( ScoreFormCheck ){
 
+    // === 钩子们 ===
+
+    // 表单
     var formHook = '.J_ScoreForm';
-    var textAreaHook = '.J_GiftText';
-    var curCountHook = '.J_CurCount';
-    var maxCountHook = '.J_MaxCount';
-    var countWrapHook = '.J_TextCounter';
-
-    var processBarHook = '.J_ProcessBar';
+    // 每页题目容器
     var processScoreBlockHook = '.J_ScoreFormWrap';
+    // 问题列表
     var questionListHook = '.J_QuestionList';
+    // 下一页按钮
     var nextHook = '.J_Next';
+    // 上一页按钮
     var prevHook = '.J_Prev';
+    // 表单错误提示
     var mainErrorTipHook = '.J_Tip';
 
+    // === 节点们 ===
     var scoreForm = $( formHook );
     var prevTrigger = $( prevHook );
     var nextTrigger = $( nextHook );
     var mainErrorTip = $( mainErrorTipHook );
-    var processBarWrap = $( processBarHook );
-    var processBar = processBarWrap.find( '.item' );
     var processScoreBlocks = $( processScoreBlockHook );
 
+    // 当前页数
     var currentActiveIndex = 0;
+    // 用于储存每个块对应的表单检查方法
     var blockCheckList = [];
-    var textCountCheckList = [];
 
+    // 便利各页，闭包构造表单检查方法，push到`blockCheckList`中以供后用
     processScoreBlocks.each( function( index, block ){
 
         block = $( block );
-
-        // 计数器
-        var countWrap = block.find( countWrapHook );
-        var textCountCheck = TextCounter( block.find( textAreaHook ), block.find( curCountHook ), block.find( maxCountHook ), toggleOverflow, toggleOverflow );
-        textCountCheckList.push(function(){
-            var result = textCountCheck();
-            if( result.result === false ){
-                return false;
-            }
-            else if( result.actual <= 0 ){
-                mainErrorTip.show();
-                return false;
-            }
-            else {
-                return true;
-            }
-        });
-
-        function toggleOverflow(){
-            countWrap.toggleClass( 'count-overflow' );
-        }
 
         // 题目
         var scoreListCheck = ScoreFormCheck( block.find( questionListHook ));
@@ -68,17 +55,17 @@ seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCoun
         blockCheckList.push( scoreCheck );
     });
 
+    // 下一页被点击
     nextTrigger.bind( 'click', function( ev ){
 
-        // 检查字数
-        var textCountCheck = textCountCheckList[ currentActiveIndex ];
+        // 先检查，通过才能进入下一页
         var blockCheck = blockCheckList[ currentActiveIndex ];
-
-        if( blockCheck() && textCountCheck() ){
+        if( blockCheck() ){
             toNext();
         }
     });
 
+    // 上一页被点击
     prevTrigger.bind( 'click', function(ev){
         toPrev();
     });
@@ -87,7 +74,7 @@ seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCoun
         var nextIndex = currentActiveIndex + 1;
 
         // 所有都完成，提交
-        if( nextIndex > processBar.length - 1 ){
+        if( nextIndex > processScoreBlocks.length - 1 ){
             scoreForm.submit();
         }
         else {
@@ -98,7 +85,6 @@ seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCoun
     function toPrev(){
 
         var nextIndex = currentActiveIndex - 1 || 0;
-
         if( nextIndex == currentActiveIndex ){
             return;
         }
@@ -106,17 +92,11 @@ seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCoun
         switchTo( nextIndex );
     }
 
+    /**
+     * 切换到制定页
+     * @param index
+     */
     function switchTo( index ){
-
-        // 更新进度
-        processBar.each( function(i, bar ){
-            if( i < index ){
-                $( bar).addClass( 'finished' );
-            }
-            else {
-                $( bar ).removeClass( 'finished' );
-            }
-        });
 
         // 更新题目块
         processScoreBlocks.hide();
@@ -131,7 +111,7 @@ seajs.use( [ 'common/textCounter', 'common/scoreFormCheck' ], function( TextCoun
         }
 
         // 最后一页
-        if( index == processBar.length - 1 ){
+        if( index == processScoreBlocks.length - 1 ){
             nextTrigger.text( '提交' );
         }
         else {

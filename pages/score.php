@@ -108,17 +108,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="score-form-block">
-                            <!--标题-->
-                            <h3 class="block-title">二、知识的内容(<span>10分</span>)</h3>
-                            <div class="question-textarea">
-                                <div class="desc">
-                                    <p class="tip">请填写支部寄语，寄语字数不超过50个字</p>
-                                    <p class="count J_TextCounter"><span class="current J_CurCount">0</span>/<span class="max J_MaxCount">50</span></p>
-                                </div>
-                                <textarea class="J_GiftText" placeholder="请填入支部寄语" name=""></textarea>
-                            </div>
-                        </div>
+
                         </div>
                         <?php } ?>
                     </form>
